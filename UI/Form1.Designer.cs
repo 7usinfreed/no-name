@@ -66,7 +66,9 @@
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.Location = new System.Drawing.Point(-7, 188);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(244, 68);
@@ -80,7 +82,8 @@
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
             this.button4.Location = new System.Drawing.Point(-7, 128);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(244, 65);
@@ -94,7 +97,8 @@
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
             this.button2.Location = new System.Drawing.Point(-7, 66);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(244, 64);
@@ -108,7 +112,8 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
             this.button1.Location = new System.Drawing.Point(-7, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(244, 67);
@@ -129,7 +134,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
             this.label1.Location = new System.Drawing.Point(519, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(164, 36);
