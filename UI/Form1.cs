@@ -39,10 +39,10 @@ namespace UI
             childForm.Show(); // إظهار النموذج
 
 
-            panelhome.BackColor = Color.Teal;
-            panel1.BackColor = Color.DarkSlateGray;
+            panelhome.BackColor = Color.WhiteSmoke;
+            panel1.BackColor = Color.Gray;
             button2.BackColor = Color.Teal;
-           
+            button1.BackColor = Color.WhiteSmoke;
             button4.BackColor = Color.Teal;
             button5.BackColor = Color.Teal;
 
@@ -66,6 +66,7 @@ namespace UI
 
             panelhome.BackColor = Color.Red;
             panel1.BackColor = Color.DarkRed;
+            button1.BackColor = Color.Teal;
             button2.BackColor = Color.Red;
             button4.BackColor = Color.Teal;
             button5.BackColor = Color.Teal;
@@ -94,6 +95,7 @@ namespace UI
 
             panelhome.BackColor = Color.Blue;
             panel1.BackColor = Color.DarkBlue;
+            button1.BackColor = Color.Teal;
             button4.BackColor = Color.Blue;
             button2.BackColor = Color.Teal;
             button5.BackColor = Color.Teal;
@@ -123,10 +125,57 @@ namespace UI
 
 
             panelhome.BackColor = Color.Green;
+            button1.BackColor = Color.Teal;
             panel1.BackColor = Color.DarkGreen;
             button4.BackColor = Color.Teal;
             button2.BackColor = Color.Teal;
             button5.BackColor = Color.Green;
+        }
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.WhiteSmoke;
+
+
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.Teal;
+        }
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            button2.BackColor= Color.Red;
+            
+
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.Teal;
+        }
+
+        private void button4_MouseEnter(object sender, EventArgs e)
+        {
+            button4.BackColor = Color.Blue;
+
+
+        }
+
+        private void button4_MouseLeave(object sender, EventArgs e)
+        {
+            button4.BackColor = Color.Teal;
+        }
+
+        private void button5_MouseEnter(object sender, EventArgs e)
+        {
+            button5.BackColor = Color.Green;
+
+
+        }
+
+        private void button5_MouseLeave(object sender, EventArgs e)
+        {
+            button5.BackColor = Color.Teal;
         }
     }
 }
