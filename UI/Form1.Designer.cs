@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelbtn = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -38,7 +39,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelcont = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.panelbtn.SuspendLayout();
             this.panelhome.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +57,24 @@
             this.panelbtn.Size = new System.Drawing.Size(234, 626);
             this.panelbtn.TabIndex = 0;
             // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.button3.Image = global::UI.Properties.Resources.settings_1_;
+            this.button3.Location = new System.Drawing.Point(-7, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(244, 68);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Project";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.buttonproj_Click);
+            // 
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(243, 0);
@@ -72,7 +90,7 @@
             this.button5.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
             this.button5.Image = global::UI.Properties.Resources.settings_1_;
-            this.button5.Location = new System.Drawing.Point(-10, 260);
+            this.button5.Location = new System.Drawing.Point(-7, 247);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(244, 68);
             this.button5.TabIndex = 1;
@@ -92,7 +110,7 @@
             this.button4.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
             this.button4.Image = global::UI.Properties.Resources.square_pen;
-            this.button4.Location = new System.Drawing.Point(-7, 196);
+            this.button4.Location = new System.Drawing.Point(-7, 185);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(244, 65);
             this.button4.TabIndex = 1;
@@ -112,7 +130,7 @@
             this.button2.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
             this.button2.Image = global::UI.Properties.Resources.users_2_;
-            this.button2.Location = new System.Drawing.Point(-7, 134);
+            this.button2.Location = new System.Drawing.Point(-7, 126);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(244, 64);
             this.button2.TabIndex = 1;
@@ -133,7 +151,7 @@
             this.button1.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
             this.button1.Image = global::UI.Properties.Resources.stats_1_;
-            this.button1.Location = new System.Drawing.Point(-7, 68);
+            this.button1.Location = new System.Drawing.Point(-7, 61);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(244, 67);
             this.button1.TabIndex = 1;
@@ -180,24 +198,6 @@
             this.panelcont.Size = new System.Drawing.Size(1253, 626);
             this.panelcont.TabIndex = 3;
             this.panelcont.Paint += new System.Windows.Forms.PaintEventHandler(this.panelcont_Paint);
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.button3.Image = global::UI.Properties.Resources.settings_1_;
-            this.button3.Location = new System.Drawing.Point(-7, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(244, 68);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Project";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.buttonproj_Click);
             // 
             // Form1
             // 
