@@ -30,14 +30,15 @@
         {
             this.panelbtn = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panelhome = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panelcont = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.panelhome = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelcont = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.panelbtn.SuspendLayout();
             this.panelhome.SuspendLayout();
             this.SuspendLayout();
@@ -45,6 +46,7 @@
             // panelbtn
             // 
             this.panelbtn.BackColor = System.Drawing.Color.Teal;
+            this.panelbtn.Controls.Add(this.button3);
             this.panelbtn.Controls.Add(this.panel2);
             this.panelbtn.Controls.Add(this.button5);
             this.panelbtn.Controls.Add(this.button4);
@@ -61,6 +63,87 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1247, 100);
             this.panel2.TabIndex = 1;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.button5.Image = global::UI.Properties.Resources.settings_1_;
+            this.button5.Location = new System.Drawing.Point(-10, 260);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(244, 68);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "Sittings";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.MouseEnter += new System.EventHandler(this.button5_MouseEnter);
+            this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.button4.Image = global::UI.Properties.Resources.square_pen;
+            this.button4.Location = new System.Drawing.Point(-7, 196);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(244, 65);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Edit";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
+            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.button2.Image = global::UI.Properties.Resources.users_2_;
+            this.button2.Location = new System.Drawing.Point(-7, 134);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(244, 64);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Team";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
+            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.button1.Image = global::UI.Properties.Resources.stats_1_;
+            this.button1.Location = new System.Drawing.Point(-7, 68);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(244, 67);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Status";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             // 
             // panelhome
             // 
@@ -96,87 +179,25 @@
             this.panelcont.Name = "panelcont";
             this.panelcont.Size = new System.Drawing.Size(1253, 626);
             this.panelcont.TabIndex = 3;
+            this.panelcont.Paint += new System.Windows.Forms.PaintEventHandler(this.panelcont_Paint);
             // 
-            // button5
+            // button3
             // 
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.button5.Image = global::UI.Properties.Resources.settings_1_;
-            this.button5.Location = new System.Drawing.Point(-7, 188);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(244, 68);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Sittings";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            this.button5.MouseEnter += new System.EventHandler(this.button5_MouseEnter);
-            this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.button4.Image = global::UI.Properties.Resources.square_pen;
-            this.button4.Location = new System.Drawing.Point(-7, 128);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(244, 65);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Edit";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            this.button4.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
-            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.button2.Image = global::UI.Properties.Resources.users_2_;
-            this.button2.Location = new System.Drawing.Point(-7, 66);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(244, 64);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Team";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button2.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
-            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.button1.Image = global::UI.Properties.Resources.stats_1_;
-            this.button1.Location = new System.Drawing.Point(-7, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(244, 67);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Status";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
-            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.button3.Image = global::UI.Properties.Resources.settings_1_;
+            this.button3.Location = new System.Drawing.Point(-7, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(244, 68);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Project";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.buttonproj_Click);
             // 
             // Form1
             // 
@@ -211,6 +232,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelcont;
+        private System.Windows.Forms.Button button3;
     }
 }
 

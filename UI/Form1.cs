@@ -177,5 +177,28 @@ namespace UI
         {
             button5.BackColor = Color.Teal;
         }
+
+        private void panelcont_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonproj_Click(object sender, EventArgs e)
+        {
+            // 1. إنشاء نسخة من النموذج المراد فتحه
+            FormProject childForm = new FormProject();
+
+            // 2. ضبط خصائص النموذج ليتمكن من الدخول داخل حاوية
+            childForm.TopLevel = false; // مهم جداً: لكي لا يتعامل معه الويندوز كنافذة مستقلة
+            childForm.FormBorderStyle = FormBorderStyle.None; // لإزالة الحواف وشريط العنوان
+            childForm.Dock = DockStyle.Fill; // لملء المساحة بالكامل داخل الـ Panel
+
+            // 3. إضافة النموذج إلى الـ Panel وإظهاره
+            panelcont.Controls.Clear(); // مسح أي محتوى سابق داخل الـ Panel
+            panelcont.Controls.Add(childForm); // إضافة النموذج للوحة
+            childForm.Show(); // إظهار النموذج
+
+
+        }
     }
 }
