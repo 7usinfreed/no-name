@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LiveCharts; // لا تنسَ إضافة هذا السطر في الأعلى
+using LiveCharts.Wpf;
 
 namespace UI
 {
@@ -178,10 +180,7 @@ namespace UI
             button5.BackColor = Color.Teal;
         }
 
-        private void panelcont_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
 
         private void buttonproj_Click(object sender, EventArgs e)
         {

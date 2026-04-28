@@ -64,7 +64,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.button3.Image = global::UI.Properties.Resources.settings_1_;
+            this.button3.Image = global::UI.Properties.Resources.master_plan;
             this.button3.Location = new System.Drawing.Point(-7, 0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(244, 68);
@@ -197,7 +197,7 @@
             this.panelcont.Name = "panelcont";
             this.panelcont.Size = new System.Drawing.Size(1253, 626);
             this.panelcont.TabIndex = 3;
-            this.panelcont.Paint += new System.Windows.Forms.PaintEventHandler(this.panelcont_Paint);
+            
             // 
             // Form1
             // 
