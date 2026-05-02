@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LiveCharts; // لا تنسَ إضافة هذا السطر في الأعلى
 using LiveCharts.Wpf;
+using static UI.Classpanelcont;
 
 namespace UI
 {
@@ -43,10 +44,7 @@ namespace UI
 
             panelhome.BackColor = Color.WhiteSmoke;
             panel1.BackColor = Color.Gray;
-            button2.BackColor = Color.Teal;
-            button1.BackColor = Color.WhiteSmoke;
-            button4.BackColor = Color.Teal;
-            button5.BackColor = Color.Teal;
+          
 
         }
 
@@ -68,10 +66,7 @@ namespace UI
 
             panelhome.BackColor = Color.Red;
             panel1.BackColor = Color.DarkRed;
-            button1.BackColor = Color.Teal;
-            button2.BackColor = Color.Red;
-            button4.BackColor = Color.Teal;
-            button5.BackColor = Color.Teal;
+           
 
 
 
@@ -97,10 +92,7 @@ namespace UI
 
             panelhome.BackColor = Color.Blue;
             panel1.BackColor = Color.DarkBlue;
-            button1.BackColor = Color.Teal;
-            button4.BackColor = Color.Blue;
-            button2.BackColor = Color.Teal;
-            button5.BackColor = Color.Teal;
+         
 
 
 
@@ -110,28 +102,14 @@ namespace UI
         private void button5_Click(object sender, EventArgs e)
         {
 
-            // 1. إنشاء نسخة من النموذج المراد فتحه
-            Form5 childForm = new Form5();
-
-            // 2. ضبط خصائص النموذج ليتمكن من الدخول داخل حاوية
-            childForm.TopLevel = false; // مهم جداً: لكي لا يتعامل معه الويندوز كنافذة مستقلة
-            childForm.FormBorderStyle = FormBorderStyle.None; // لإزالة الحواف وشريط العنوان
-            childForm.Dock = DockStyle.Fill; // لملء المساحة بالكامل داخل الـ Panel
-
-            // 3. إضافة النموذج إلى الـ Panel وإظهاره
-            panelcont.Controls.Clear(); // مسح أي محتوى سابق داخل الـ Panel
-            panelcont.Controls.Add(childForm); // إضافة النموذج للوحة
-            childForm.Show(); // إظهار النموذج
+            Classpanelcont.OpenChildForm(panelcont, new Form5());
 
 
 
 
             panelhome.BackColor = Color.Green;
-            button1.BackColor = Color.Teal;
             panel1.BackColor = Color.DarkGreen;
-            button4.BackColor = Color.Teal;
-            button2.BackColor = Color.Teal;
-            button5.BackColor = Color.Green;
+           
         }
         private void button1_MouseEnter(object sender, EventArgs e)
         {
@@ -158,7 +136,7 @@ namespace UI
 
         private void button4_MouseEnter(object sender, EventArgs e)
         {
-            button4.BackColor = Color.Blue;
+            button4.BackColor = Color.FromArgb(44, 62, 80);
 
 
         }
@@ -198,6 +176,10 @@ namespace UI
             childForm.Show(); // إظهار النموذج
 
 
+            panelhome.BackColor = Color.Teal;
+            panel1.BackColor = Color.DarkSlateGray;
         }
+
+        
     }
 }

@@ -40,7 +40,7 @@
             // 
             this.label2.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(194, 242);
+            this.label2.Location = new System.Drawing.Point(194, 278);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 32);
             this.label2.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             this.label3.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(179, 310);
+            this.label3.Location = new System.Drawing.Point(179, 346);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 32);
             this.label3.TabIndex = 0;
@@ -60,14 +60,14 @@
             // 
             // textboxuser
             // 
-            this.textboxuser.Location = new System.Drawing.Point(301, 247);
+            this.textboxuser.Location = new System.Drawing.Point(301, 283);
             this.textboxuser.Name = "textboxuser";
             this.textboxuser.Size = new System.Drawing.Size(161, 27);
             this.textboxuser.TabIndex = 1;
             // 
             // textboxpass
             // 
-            this.textboxpass.Location = new System.Drawing.Point(301, 315);
+            this.textboxpass.Location = new System.Drawing.Point(301, 351);
             this.textboxpass.Name = "textboxpass";
             this.textboxpass.Size = new System.Drawing.Size(161, 27);
             this.textboxpass.TabIndex = 1;
@@ -75,7 +75,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(301, 381);
+            this.button1.Location = new System.Drawing.Point(301, 417);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 40);
             this.button1.TabIndex = 2;
@@ -89,7 +89,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Image = global::UI.Properties.Resources.enter_1_;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Location = new System.Drawing.Point(206, 131);
+            this.label1.Location = new System.Drawing.Point(206, 167);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(279, 73);
             this.label1.TabIndex = 0;

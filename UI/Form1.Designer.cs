@@ -190,6 +190,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(237, 100);
             this.panel1.TabIndex = 2;
+            
             // 
             // panelcont
             // 
@@ -197,7 +198,6 @@
             this.panelcont.Name = "panelcont";
             this.panelcont.Size = new System.Drawing.Size(1253, 626);
             this.panelcont.TabIndex = 3;
-            
             // 
             // Form1
             // 

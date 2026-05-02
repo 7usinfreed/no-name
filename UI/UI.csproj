@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassForms.cs" />
+    <Compile Include="Classpanelcont.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
