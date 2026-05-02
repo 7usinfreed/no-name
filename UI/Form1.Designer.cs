@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panelbtn = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonproj = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -46,7 +46,7 @@
             // panelbtn
             // 
             this.panelbtn.BackColor = System.Drawing.Color.Teal;
-            this.panelbtn.Controls.Add(this.button3);
+            this.panelbtn.Controls.Add(this.buttonproj);
             this.panelbtn.Controls.Add(this.panel2);
             this.panelbtn.Controls.Add(this.button5);
             this.panelbtn.Controls.Add(this.button4);
@@ -57,23 +57,25 @@
             this.panelbtn.Size = new System.Drawing.Size(234, 626);
             this.panelbtn.TabIndex = 0;
             // 
-            // button3
+            // buttonproj
             // 
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.button3.Image = global::UI.Properties.Resources.master_plan;
-            this.button3.Location = new System.Drawing.Point(-7, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(244, 68);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Project";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.buttonproj_Click);
+            this.buttonproj.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.buttonproj.FlatAppearance.BorderSize = 0;
+            this.buttonproj.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonproj.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
+            this.buttonproj.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.buttonproj.Image = global::UI.Properties.Resources.master_plan;
+            this.buttonproj.Location = new System.Drawing.Point(-7, 0);
+            this.buttonproj.Name = "buttonproj";
+            this.buttonproj.Size = new System.Drawing.Size(244, 68);
+            this.buttonproj.TabIndex = 2;
+            this.buttonproj.Text = "Project";
+            this.buttonproj.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonproj.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonproj.UseVisualStyleBackColor = true;
+            this.buttonproj.Click += new System.EventHandler(this.buttonproj_Click);
+            this.buttonproj.MouseEnter += new System.EventHandler(this.buttonprol_MouseEnter);
+            this.buttonproj.MouseLeave += new System.EventHandler(this.buttonproj_MouseLeave);
             // 
             // panel2
             // 
@@ -190,7 +192,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(237, 100);
             this.panel1.TabIndex = 2;
-            
             // 
             // panelcont
             // 
@@ -232,7 +233,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelcont;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonproj;
     }
 }
 

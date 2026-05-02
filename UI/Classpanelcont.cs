@@ -29,6 +29,9 @@ public static class Classpanelcont
             childForm.Tag = childForm;
             childForm.Show();
             childForm.BringToFront();
+          
+       
+
         }
     }
 }
