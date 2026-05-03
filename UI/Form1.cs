@@ -30,8 +30,7 @@ namespace UI
 
             Classpanelcont.OpenChildForm(panelcont, new Form2());
 
-            panelhome.BackColor = Color.WhiteSmoke;
-            panel1.BackColor = Color.Gray;
+          
           
 
         }
@@ -40,9 +39,6 @@ namespace UI
         {
             Classpanelcont.OpenChildForm(panelcont, new Form3());
 
-            panelhome.BackColor = Color.Red;
-            panel1.BackColor = Color.DarkRed;
-           
 
 
 
@@ -53,8 +49,7 @@ namespace UI
         {
             Classpanelcont.OpenChildForm(panelcont, new Form4());
 
-            panelhome.BackColor = Color.Blue;
-            panel1.BackColor = Color.DarkBlue;
+          
          
 
 
@@ -70,10 +65,24 @@ namespace UI
 
 
 
-            panelhome.BackColor = Color.Green;
-            panel1.BackColor = Color.DarkGreen;
+          
            
         }
+
+        private void buttonproj_Click(object sender, EventArgs e)
+        {
+            Classpanelcont.OpenChildForm(panelcont, new FormProject());
+
+
+
+        }
+
+
+       //-----------------------------------------------------------
+
+
+
+
         private void button1_MouseEnter(object sender, EventArgs e)
         {
             button1.BackColor = Color.FromArgb(44, 62, 80);
@@ -135,14 +144,7 @@ namespace UI
 
 
 
-        private void buttonproj_Click(object sender, EventArgs e)
-        {
-            Classpanelcont.OpenChildForm(panelcont, new FormProject());
-
-
-            panelhome.BackColor = Color.Teal;
-            panel1.BackColor = Color.DarkSlateGray;
-        }
+        
 
         
     }

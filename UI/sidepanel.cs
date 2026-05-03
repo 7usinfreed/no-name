@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UI
 {
-    internal class ClassForms
+    public static class sidepanel
     {
     }
 }
