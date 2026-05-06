@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.panelbtn = new System.Windows.Forms.Panel();
-            this.buttonproj = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelhome = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelcont = new System.Windows.Forms.Panel();
+            this.buttonproj = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelbtn.SuspendLayout();
             this.panelhome.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelbtn
             // 
-            this.panelbtn.BackColor = System.Drawing.Color.Teal;
+            this.panelbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
             this.panelbtn.Controls.Add(this.buttonproj);
             this.panelbtn.Controls.Add(this.panel2);
             this.panelbtn.Controls.Add(this.button5);
@@ -56,6 +56,47 @@
             this.panelbtn.Name = "panelbtn";
             this.panelbtn.Size = new System.Drawing.Size(234, 626);
             this.panelbtn.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(243, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1247, 100);
+            this.panel2.TabIndex = 1;
+            // 
+            // panelhome
+            // 
+            this.panelhome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
+            this.panelhome.Controls.Add(this.label1);
+            this.panelhome.Location = new System.Drawing.Point(237, 0);
+            this.panelhome.Name = "panelhome";
+            this.panelhome.Size = new System.Drawing.Size(1253, 100);
+            this.panelhome.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Ebrima", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.label1.Location = new System.Drawing.Point(519, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(164, 36);
+            this.label1.TabIndex = 0;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(84)))), ((int)(((byte)(22)))));
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(237, 100);
+            this.panel1.TabIndex = 2;
+            // 
+            // panelcont
+            // 
+            this.panelcont.Location = new System.Drawing.Point(237, 99);
+            this.panelcont.Name = "panelcont";
+            this.panelcont.Size = new System.Drawing.Size(1253, 626);
+            this.panelcont.TabIndex = 3;
             // 
             // buttonproj
             // 
@@ -74,15 +115,6 @@
             this.buttonproj.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonproj.UseVisualStyleBackColor = true;
             this.buttonproj.Click += new System.EventHandler(this.buttonproj_Click);
-            this.buttonproj.MouseEnter += new System.EventHandler(this.buttonprol_MouseEnter);
-            this.buttonproj.MouseLeave += new System.EventHandler(this.buttonproj_MouseLeave);
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(243, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1247, 100);
-            this.panel2.TabIndex = 1;
             // 
             // button5
             // 
@@ -101,8 +133,6 @@
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            this.button5.MouseEnter += new System.EventHandler(this.button5_MouseEnter);
-            this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
             // 
             // button4
             // 
@@ -121,8 +151,6 @@
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            this.button4.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
-            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
             // 
             // button2
             // 
@@ -141,8 +169,6 @@
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button2.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
-            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             // 
             // button1
             // 
@@ -152,53 +178,16 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.button1.Image = global::UI.Properties.Resources.stats_1_;
+            this.button1.Image = global::UI.Properties.Resources.home;
             this.button1.Location = new System.Drawing.Point(-7, 61);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(244, 67);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Status";
+            this.button1.Text = "Home";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
-            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
-            // 
-            // panelhome
-            // 
-            this.panelhome.BackColor = System.Drawing.Color.Teal;
-            this.panelhome.Controls.Add(this.label1);
-            this.panelhome.Location = new System.Drawing.Point(237, 0);
-            this.panelhome.Name = "panelhome";
-            this.panelhome.Size = new System.Drawing.Size(1253, 100);
-            this.panelhome.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Ebrima", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.label1.Location = new System.Drawing.Point(519, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "HOME";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(237, 100);
-            this.panel1.TabIndex = 2;
-            // 
-            // panelcont
-            // 
-            this.panelcont.Location = new System.Drawing.Point(237, 99);
-            this.panelcont.Name = "panelcont";
-            this.panelcont.Size = new System.Drawing.Size(1253, 626);
-            this.panelcont.TabIndex = 3;
             // 
             // Form1
             // 
@@ -212,6 +201,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelhome);
             this.Controls.Add(this.panelbtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

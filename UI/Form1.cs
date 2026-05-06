@@ -22,14 +22,14 @@ namespace UI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            sidepanel.SetupSideMenu(this.panelbtn);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
             Classpanelcont.OpenChildForm(panelcont, new Form2());
-
+           label1.Text=button1.Text;
           
           
 
@@ -38,7 +38,7 @@ namespace UI
         private void button2_Click(object sender, EventArgs e)
         {
             Classpanelcont.OpenChildForm(panelcont, new Form3());
-
+            label1.Text = button2.Text;
 
 
 
@@ -49,8 +49,8 @@ namespace UI
         {
             Classpanelcont.OpenChildForm(panelcont, new Form4());
 
-          
-         
+
+            label1.Text = button4.Text;
 
 
 
@@ -63,10 +63,10 @@ namespace UI
             Classpanelcont.OpenChildForm(panelcont, new Form5());
 
 
+            label1.Text = button5.Text;
 
 
-          
-           
+
         }
 
         private void buttonproj_Click(object sender, EventArgs e)
@@ -74,6 +74,8 @@ namespace UI
             Classpanelcont.OpenChildForm(panelcont, new FormProject());
 
 
+
+            label1.Text = buttonproj.Text;
 
         }
 
@@ -83,64 +85,7 @@ namespace UI
 
 
 
-        private void button1_MouseEnter(object sender, EventArgs e)
-        {
-            button1.BackColor = Color.FromArgb(44, 62, 80);
-
-
-        }
-
-        private void button1_MouseLeave(object sender, EventArgs e)
-        {
-            button1.BackColor = Color.Teal;
-        }
-        private void button2_MouseEnter(object sender, EventArgs e)
-        {
-            button2.BackColor= Color.FromArgb(44, 62, 80);
-            
-
-        }
-
-        private void button2_MouseLeave(object sender, EventArgs e)
-        {
-            button2.BackColor = Color.Teal;
-        }
-
-        private void button4_MouseEnter(object sender, EventArgs e)
-        {
-            button4.BackColor = Color.FromArgb(44, 62, 80);
-
-
-        }
-
-        private void button4_MouseLeave(object sender, EventArgs e)
-        {
-            button4.BackColor = Color.Teal;
-        }
-
-        private void button5_MouseEnter(object sender, EventArgs e)
-        {
-            button5.BackColor = Color.FromArgb(44, 62, 80);
-
-
-        }
-
-        private void button5_MouseLeave(object sender, EventArgs e)
-        {
-            button5.BackColor = Color.Teal;
-        }
-
-        private void buttonprol_MouseEnter(object sender, EventArgs e)
-        {
-            buttonproj.BackColor = Color.FromArgb(44, 62, 80);
-
-
-        }
-
-        private void buttonproj_MouseLeave(object sender, EventArgs e)
-        {
-            buttonproj.BackColor = Color.Teal;
-        }
+        
 
 
 
