@@ -44,5 +44,7 @@ namespace UI
                 pieChart1.LegendLocation = LegendLocation.Bottom;
             
         }
+
+        
     }
 }

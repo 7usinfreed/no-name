@@ -35,15 +35,7 @@ namespace UI
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Classpanelcont.OpenChildForm(panelcont, new Form3());
-            label1.Text = button2.Text;
-
-
-
-
-        }
+     
 
         private void button4_Click(object sender, EventArgs e)
         {
