@@ -1,4 +1,4 @@
-use Mangment
+create database Mangment
 -- 1. الأعضاء
 CREATE TABLE members (
     m_id INT PRIMARY KEY IDENTITY(1,1),
@@ -46,6 +46,8 @@ CREATE TABLE tasks (
     description NVARCHAR(MAX),
     status NVARCHAR(20) NOT NULL DEFAULT 'Planning'
         CHECK (status IN ('Planning', 'Active', 'Completed')),
+	task_start DATE,
+    task_end DATE,
     project_id INT REFERENCES projects(project_id) NOT NULL,
     assigned_to INT REFERENCES members(m_id) NOT NULL
 );

@@ -13,7 +13,7 @@ namespace UI.Classes
        public class DatabaseHelper
         {
             // نص الاتصال - يفضل وضعه هنا لتغييره من مكان واحد فقط
-            private string connectionString = @"Server=.; Database=Mangment; Integrated Security=True;";
+            private string connectionString = @"Server=ABOODI\MASSQLSERVER; Database=Mangment; Integrated Security=True;";
 
             // دالة لجلب البيانات (تستخدم للـ Dashboard والـ DataGridView)
             public DataTable GetDataTable(string query)
