@@ -28,7 +28,7 @@ namespace UI
         private void button1_Click(object sender, EventArgs e)
         {
 
-            Classpanelcont.OpenChildForm(panelcont, new Form2());
+            Classpanelcont.OpenChildForm(panelcont, new FormHome());
            label1.Text=button1.Text;
           
           

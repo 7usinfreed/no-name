@@ -459,7 +459,7 @@
             this.labelprocessing.TabIndex = 8;
             this.labelprocessing.Text = "processing";
             // 
-            // label3
+            // tabPage2
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 141);
