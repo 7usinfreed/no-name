@@ -28,7 +28,7 @@ namespace UI
         private void button1_Click(object sender, EventArgs e)
         {
 
-            Classpanelcont.OpenChildForm(panelcont, new Form2());
+            Classpanelcont.OpenChildForm(panelcont, new FormProject());
            label1.Text=button1.Text;
           
           
@@ -63,7 +63,7 @@ namespace UI
 
         private void buttonproj_Click(object sender, EventArgs e)
         {
-            Classpanelcont.OpenChildForm(panelcont, new FormProject());
+            Classpanelcont.OpenChildForm(panelcont, new Form2());
 
 
 
