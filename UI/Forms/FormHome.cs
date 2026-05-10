@@ -22,27 +22,8 @@ namespace UI
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
-                // تعريف البيانات (SeriesCollection)
-                pieChart1.Series = new SeriesCollection
-    {
-        new PieSeries
-        {
-            Title = "مكتملة",
-            Values = new ChartValues<double> { 70 }, // نسبة الإنجاز
-            Fill = System.Windows.Media.Brushes.MediumSeaGreen,
-            DataLabels = true
-        },
-        new PieSeries
-        {
-            Title = "متبقية",
-            Values = new ChartValues<double> { 30 }, // النسبة المتبقية
-            DataLabels = true
-        }
-    };
-
-                // تحسين المظهر
-                pieChart1.LegendLocation = LegendLocation.Bottom;
+            // TODO: This line of code loads data into the 'mangDataSet.members' table. You can move, or remove it, as needed.
+            this.membersTableAdapter.Fill(this.mangDataSet.members);
 
 
             //-----------------------------------------------------------
@@ -89,7 +70,7 @@ namespace UI
                     Title = "Completed",
                     Values = new ChartValues<int> { 23, 22, 22, 21, 12, 10 },
                     StackMode = StackMode.Values, // هذا السطر يجعلها تتراكم فوق بعضها
-                    Fill = (SolidColorBrush)new BrushConverter().ConvertFromString("#2196F3"), // لون أزرق عصري
+                    Fill = (SolidColorBrush)new BrushConverter().ConvertFromString("#2980B9"), // لون أزرق عصري
                     DataLabels = true // لإظهار الأرقام داخل الأعمدة كما في الصورة
                 };
 
@@ -99,7 +80,7 @@ namespace UI
                     Title = "Remaining",
                     Values = new ChartValues<int> { 6, 6, 10, 9, 5, 5 },
                     StackMode = StackMode.Values,
-                    Fill = (SolidColorBrush)new BrushConverter().ConvertFromString("#FF851B"), // لون برتقالي
+                    Fill = (SolidColorBrush)new BrushConverter().ConvertFromString("#E67E22"), // لون برتقالي
                     DataLabels = true
                 };
 
@@ -127,6 +108,6 @@ namespace UI
             }
         }
 
-       
+        
     }
 }
