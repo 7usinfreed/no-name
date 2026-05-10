@@ -64,6 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Classpanelcont.cs" />
+    <Compile Include="Classes\DataGridView_Design.cs" />
+    <Compile Include="Classes\Database_Selects.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +205,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task-checklist%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task-checklist%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\member-list%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team-check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team-check%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard-check%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time-fast.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
