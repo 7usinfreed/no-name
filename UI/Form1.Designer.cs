@@ -35,11 +35,15 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panelhome = new System.Windows.Forms.Panel();
+            this.minimizedbox = new System.Windows.Forms.PictureBox();
+            this.Closebox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelcont = new System.Windows.Forms.Panel();
             this.panelbtn.SuspendLayout();
             this.panelhome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minimizedbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Closebox)).BeginInit();
             this.SuspendLayout();
             // 
             // panelbtn
@@ -138,11 +142,39 @@
             // panelhome
             // 
             this.panelhome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
+            this.panelhome.Controls.Add(this.minimizedbox);
+            this.panelhome.Controls.Add(this.Closebox);
             this.panelhome.Controls.Add(this.label1);
             this.panelhome.Location = new System.Drawing.Point(237, 0);
             this.panelhome.Name = "panelhome";
             this.panelhome.Size = new System.Drawing.Size(1253, 100);
             this.panelhome.TabIndex = 1;
+            this.panelhome.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelhome_MouseDown);
+            // 
+            // minimizedbox
+            // 
+            this.minimizedbox.Image = global::UI.Properties.Resources.minimize;
+            this.minimizedbox.Location = new System.Drawing.Point(1096, 3);
+            this.minimizedbox.Name = "minimizedbox";
+            this.minimizedbox.Size = new System.Drawing.Size(67, 63);
+            this.minimizedbox.TabIndex = 1;
+            this.minimizedbox.TabStop = false;
+            this.minimizedbox.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.minimizedbox.MouseEnter += new System.EventHandler(this.minimizedbox_MouseEnter);
+            this.minimizedbox.MouseLeave += new System.EventHandler(this.minimizedbox_MouseLeave);
+            // 
+            // Closebox
+            // 
+            this.Closebox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
+            this.Closebox.Image = global::UI.Properties.Resources.rectangle_xmark_1_;
+            this.Closebox.Location = new System.Drawing.Point(1184, 3);
+            this.Closebox.Name = "Closebox";
+            this.Closebox.Size = new System.Drawing.Size(66, 63);
+            this.Closebox.TabIndex = 1;
+            this.Closebox.TabStop = false;
+            this.Closebox.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.Closebox.MouseEnter += new System.EventHandler(this.Closebox_MouseEnter);
+            this.Closebox.MouseLeave += new System.EventHandler(this.Closebox_MouseLeave);
             // 
             // label1
             // 
@@ -187,6 +219,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelbtn.ResumeLayout(false);
             this.panelhome.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.minimizedbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Closebox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -203,6 +237,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelcont;
         private System.Windows.Forms.Button buttonproj;
+        private System.Windows.Forms.PictureBox Closebox;
+        private System.Windows.Forms.PictureBox minimizedbox;
     }
 }
 

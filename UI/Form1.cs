@@ -9,12 +9,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LiveCharts; // لا تنسَ إضافة هذا السطر في الأعلى
 using LiveCharts.Wpf;
+using System.Runtime.InteropServices;
 using static UI.Classpanelcont;
 
 namespace UI
 {
     public partial class Form1 : Form
     {
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +28,10 @@ namespace UI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            sidepanel.SetupSideMenu(this.panelbtn);
+            Color_btn_panel.SetupSideMenu(this.panelbtn);
+            
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,18 +80,66 @@ namespace UI
 
         }
 
+        //------------------------زر الاغلاق
 
-       //-----------------------------------------------------------
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+            
+        }
+        private void Closebox_MouseEnter(object sender, EventArgs e)
+        {
+            Closebox.BackColor = Color.Red;
+        }
+        private void Closebox_MouseLeave(object sender, EventArgs e)
+        {
+            Closebox.BackColor = Color.FromArgb(230, 126, 34);
+        }
+
+
+        //----------------------------زر التصغير
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void minimizedbox_MouseEnter(object sender, EventArgs e)
+        {
+            minimizedbox.BackColor = Color.LightGray;
+        }
+        private void minimizedbox_MouseLeave(object sender, EventArgs e)
+        {
+            minimizedbox.BackColor = Color.FromArgb(230, 126, 34);
+        }
+
+        private void panelhome_MouseDown(object sender, MouseEventArgs e)
+        {
+            // التأكد من أن الضغط تم بالزر الأيسر للماوس
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(this.Handle, 0x112, 0xf012, 0);
+            }
+        }
 
 
 
 
-        
 
 
 
-        
 
-        
+        //-----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
     }
 }

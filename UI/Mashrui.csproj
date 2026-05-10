@@ -109,7 +109,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Classes\sidepanel.cs" />
+    <Compile Include="Classes\Color_btn_panel.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +226,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\time-fast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangle-xmark%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

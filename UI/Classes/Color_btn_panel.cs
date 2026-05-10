@@ -10,11 +10,14 @@ namespace UI
 {
   
 
-    public static class sidepanel
+    public static class Color_btn_panel
     {
         // ألوان موحدة للبرنامج بالكامل
         public static Color DefaultColor = Color.FromArgb(230, 126, 34);
         public static Color HoverColor = Color.FromArgb(41, 128, 185);
+        
+        
+
 
         public static void SetupSideMenu(Panel menuPanel)
         {
@@ -33,5 +36,9 @@ namespace UI
                 }
             }
         }
-    }
+
+        
+        }
+
+    
 }
