@@ -32,8 +32,7 @@
             this.tabNewpro = new System.Windows.Forms.TabPage();
             this.tabNew = new System.Windows.Forms.TabControl();
             this.tabInfoProject = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnNextInfo = new System.Windows.Forms.Button();
             this.labelDead_pro = new System.Windows.Forms.Label();
             this.labelStart_pro = new System.Windows.Forms.Label();
             this.dtpDead_line = new System.Windows.Forms.DateTimePicker();
@@ -45,9 +44,9 @@
             this.tabTeam = new System.Windows.Forms.TabPage();
             this.txtName_Team = new System.Windows.Forms.TextBox();
             this.labelName_team = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnBack_team = new System.Windows.Forms.Button();
-            this.btnNext_team = new System.Windows.Forms.Button();
+            this.dgvTeam = new System.Windows.Forms.DataGridView();
+            this.btnBackTeam = new System.Windows.Forms.Button();
+            this.btnNextTeam = new System.Windows.Forms.Button();
             this.gboxMember = new System.Windows.Forms.GroupBox();
             this.btnDelmember = new System.Windows.Forms.Button();
             this.labelEmail = new System.Windows.Forms.Label();
@@ -60,12 +59,13 @@
             this.labelRole = new System.Windows.Forms.Label();
             this.txtMember = new System.Windows.Forms.TextBox();
             this.tabTask = new System.Windows.Forms.TabPage();
+            this.btnEnd = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.labelprocessing = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.labelTaskTitle = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.dgvTasks = new System.Windows.Forms.ComboBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -76,18 +76,18 @@
             this.labelLevel = new System.Windows.Forms.Label();
             this.labelTaskDis = new System.Windows.Forms.Label();
             this.labelAssignee = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnBackTask = new System.Windows.Forms.Button();
+            this.btnShowTasks = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.labelLevelShow = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cmbFilterLevel = new System.Windows.Forms.ComboBox();
             this.tabLoad = new System.Windows.Forms.TabPage();
             this.tabProject.SuspendLayout();
             this.tabNewpro.SuspendLayout();
             this.tabNew.SuspendLayout();
             this.tabInfoProject.SuspendLayout();
             this.tabTeam.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTeam)).BeginInit();
             this.gboxMember.SuspendLayout();
             this.tabTask.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -126,12 +126,12 @@
             this.tabNew.SelectedIndex = 0;
             this.tabNew.Size = new System.Drawing.Size(1019, 467);
             this.tabNew.TabIndex = 1;
+            this.tabNew.SelectedIndexChanged += new System.EventHandler(this.tabNew_SelectedIndexChanged);
             // 
             // tabInfoProject
             // 
             this.tabInfoProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.tabInfoProject.Controls.Add(this.button7);
-            this.tabInfoProject.Controls.Add(this.button1);
+            this.tabInfoProject.Controls.Add(this.btnNextInfo);
             this.tabInfoProject.Controls.Add(this.labelDead_pro);
             this.tabInfoProject.Controls.Add(this.labelStart_pro);
             this.tabInfoProject.Controls.Add(this.dtpDead_line);
@@ -147,23 +147,15 @@
             this.tabInfoProject.TabIndex = 0;
             this.tabInfoProject.Text = "Information";
             // 
-            // button7
+            // btnNextInfo
             // 
-            this.button7.Location = new System.Drawing.Point(759, 384);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(119, 50);
-            this.button7.TabIndex = 28;
-            this.button7.Text = "Save";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(884, 384);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 50);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNextInfo.Location = new System.Drawing.Point(884, 384);
+            this.btnNextInfo.Name = "btnNextInfo";
+            this.btnNextInfo.Size = new System.Drawing.Size(119, 50);
+            this.btnNextInfo.TabIndex = 18;
+            this.btnNextInfo.Text = "Next";
+            this.btnNextInfo.UseVisualStyleBackColor = true;
+            this.btnNextInfo.Click += new System.EventHandler(this.btnNextInfo_Click);
             // 
             // labelDead_pro
             // 
@@ -238,9 +230,9 @@
             this.tabTeam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
             this.tabTeam.Controls.Add(this.txtName_Team);
             this.tabTeam.Controls.Add(this.labelName_team);
-            this.tabTeam.Controls.Add(this.dataGridView1);
-            this.tabTeam.Controls.Add(this.btnBack_team);
-            this.tabTeam.Controls.Add(this.btnNext_team);
+            this.tabTeam.Controls.Add(this.dgvTeam);
+            this.tabTeam.Controls.Add(this.btnBackTeam);
+            this.tabTeam.Controls.Add(this.btnNextTeam);
             this.tabTeam.Controls.Add(this.gboxMember);
             this.tabTeam.Location = new System.Drawing.Point(4, 25);
             this.tabTeam.Name = "tabTeam";
@@ -251,7 +243,7 @@
             // 
             // txtName_Team
             // 
-            this.txtName_Team.Location = new System.Drawing.Point(634, 58);
+            this.txtName_Team.Location = new System.Drawing.Point(634, 24);
             this.txtName_Team.Name = "txtName_Team";
             this.txtName_Team.Size = new System.Drawing.Size(369, 22);
             this.txtName_Team.TabIndex = 26;
@@ -260,39 +252,42 @@
             // 
             this.labelName_team.AutoSize = true;
             this.labelName_team.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelName_team.Location = new System.Drawing.Point(634, 39);
+            this.labelName_team.Location = new System.Drawing.Point(634, 5);
             this.labelName_team.Name = "labelName_team";
             this.labelName_team.Size = new System.Drawing.Size(83, 16);
             this.labelName_team.TabIndex = 25;
             this.labelName_team.Text = "Name Team";
             // 
-            // dataGridView1
+            // dgvTeam
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(622, 428);
-            this.dataGridView1.TabIndex = 22;
+            this.dgvTeam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTeam.Location = new System.Drawing.Point(6, 6);
+            this.dgvTeam.Name = "dgvTeam";
+            this.dgvTeam.RowHeadersWidth = 51;
+            this.dgvTeam.RowTemplate.Height = 24;
+            this.dgvTeam.Size = new System.Drawing.Size(622, 426);
+            this.dgvTeam.TabIndex = 22;
+            this.dgvTeam.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // btnBack_team
+            // btnBackTeam
             // 
-            this.btnBack_team.Location = new System.Drawing.Point(759, 384);
-            this.btnBack_team.Name = "btnBack_team";
-            this.btnBack_team.Size = new System.Drawing.Size(119, 50);
-            this.btnBack_team.TabIndex = 21;
-            this.btnBack_team.Text = "Back";
-            this.btnBack_team.UseVisualStyleBackColor = true;
+            this.btnBackTeam.Location = new System.Drawing.Point(759, 384);
+            this.btnBackTeam.Name = "btnBackTeam";
+            this.btnBackTeam.Size = new System.Drawing.Size(119, 50);
+            this.btnBackTeam.TabIndex = 21;
+            this.btnBackTeam.Text = "Back";
+            this.btnBackTeam.UseVisualStyleBackColor = true;
+            this.btnBackTeam.Click += new System.EventHandler(this.btnBackTeam_Click);
             // 
-            // btnNext_team
+            // btnNextTeam
             // 
-            this.btnNext_team.Location = new System.Drawing.Point(884, 384);
-            this.btnNext_team.Name = "btnNext_team";
-            this.btnNext_team.Size = new System.Drawing.Size(119, 50);
-            this.btnNext_team.TabIndex = 20;
-            this.btnNext_team.Text = "Next";
-            this.btnNext_team.UseVisualStyleBackColor = true;
+            this.btnNextTeam.Location = new System.Drawing.Point(884, 384);
+            this.btnNextTeam.Name = "btnNextTeam";
+            this.btnNextTeam.Size = new System.Drawing.Size(119, 50);
+            this.btnNextTeam.TabIndex = 20;
+            this.btnNextTeam.Text = "Next";
+            this.btnNextTeam.UseVisualStyleBackColor = true;
+            this.btnNextTeam.Click += new System.EventHandler(this.btnNextTeam_Click);
             // 
             // gboxMember
             // 
@@ -307,9 +302,9 @@
             this.gboxMember.Controls.Add(this.labelRole);
             this.gboxMember.Controls.Add(this.txtMember);
             this.gboxMember.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.gboxMember.Location = new System.Drawing.Point(634, 109);
+            this.gboxMember.Location = new System.Drawing.Point(634, 52);
             this.gboxMember.Name = "gboxMember";
-            this.gboxMember.Size = new System.Drawing.Size(369, 269);
+            this.gboxMember.Size = new System.Drawing.Size(369, 326);
             this.gboxMember.TabIndex = 19;
             this.gboxMember.TabStop = false;
             this.gboxMember.Text = "Member";
@@ -317,9 +312,9 @@
             // btnDelmember
             // 
             this.btnDelmember.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDelmember.Location = new System.Drawing.Point(100, 230);
+            this.btnDelmember.Location = new System.Drawing.Point(109, 293);
             this.btnDelmember.Name = "btnDelmember";
-            this.btnDelmember.Size = new System.Drawing.Size(110, 23);
+            this.btnDelmember.Size = new System.Drawing.Size(122, 27);
             this.btnDelmember.TabIndex = 24;
             this.btnDelmember.Text = "Delete Member";
             this.btnDelmember.UseVisualStyleBackColor = true;
@@ -344,9 +339,9 @@
             // btnAddmemer
             // 
             this.btnAddmemer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAddmemer.Location = new System.Drawing.Point(226, 230);
+            this.btnAddmemer.Location = new System.Drawing.Point(237, 293);
             this.btnAddmemer.Name = "btnAddmemer";
-            this.btnAddmemer.Size = new System.Drawing.Size(110, 23);
+            this.btnAddmemer.Size = new System.Drawing.Size(126, 27);
             this.btnAddmemer.TabIndex = 21;
             this.btnAddmemer.Text = "Add Member";
             this.btnAddmemer.UseVisualStyleBackColor = true;
@@ -413,12 +408,13 @@
             // tabTask
             // 
             this.tabTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.tabTask.Controls.Add(this.btnEnd);
             this.tabTask.Controls.Add(this.groupBox1);
-            this.tabTask.Controls.Add(this.button5);
-            this.tabTask.Controls.Add(this.button4);
+            this.tabTask.Controls.Add(this.btnBackTask);
+            this.tabTask.Controls.Add(this.btnShowTasks);
             this.tabTask.Controls.Add(this.dataGridView2);
             this.tabTask.Controls.Add(this.labelLevelShow);
-            this.tabTask.Controls.Add(this.comboBox4);
+            this.tabTask.Controls.Add(this.cmbFilterLevel);
             this.tabTask.Location = new System.Drawing.Point(4, 25);
             this.tabTask.Name = "tabTask";
             this.tabTask.Padding = new System.Windows.Forms.Padding(3);
@@ -426,13 +422,22 @@
             this.tabTask.TabIndex = 2;
             this.tabTask.Text = "Task";
             // 
+            // btnEnd
+            // 
+            this.btnEnd.Location = new System.Drawing.Point(884, 384);
+            this.btnEnd.Name = "btnEnd";
+            this.btnEnd.Size = new System.Drawing.Size(119, 50);
+            this.btnEnd.TabIndex = 17;
+            this.btnEnd.Text = "End";
+            this.btnEnd.UseVisualStyleBackColor = true;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.labelprocessing);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.labelTaskTitle);
             this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.dgvTasks);
             this.groupBox1.Controls.Add(this.dateTimePicker2);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.numericUpDown1);
@@ -443,9 +448,9 @@
             this.groupBox1.Controls.Add(this.labelLevel);
             this.groupBox1.Controls.Add(this.labelTaskDis);
             this.groupBox1.Controls.Add(this.labelAssignee);
-            this.groupBox1.Location = new System.Drawing.Point(6, 6);
+            this.groupBox1.Location = new System.Drawing.Point(660, 9);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(351, 426);
+            this.groupBox1.Size = new System.Drawing.Size(336, 309);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -453,7 +458,8 @@
             // labelprocessing
             // 
             this.labelprocessing.AutoSize = true;
-            this.labelprocessing.Location = new System.Drawing.Point(15, 321);
+            this.labelprocessing.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelprocessing.Location = new System.Drawing.Point(204, 182);
             this.labelprocessing.Name = "labelprocessing";
             this.labelprocessing.Size = new System.Drawing.Size(74, 16);
             this.labelprocessing.TabIndex = 8;
@@ -462,7 +468,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 141);
+            this.label3.Location = new System.Drawing.Point(12, 134);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 16);
             this.label3.TabIndex = 15;
@@ -472,7 +478,7 @@
             // 
             this.labelTaskTitle.AutoSize = true;
             this.labelTaskTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelTaskTitle.Location = new System.Drawing.Point(15, 205);
+            this.labelTaskTitle.Location = new System.Drawing.Point(9, 184);
             this.labelTaskTitle.Name = "labelTaskTitle";
             this.labelTaskTitle.Size = new System.Drawing.Size(64, 16);
             this.labelTaskTitle.TabIndex = 2;
@@ -486,21 +492,21 @@
             this.comboBox3.Size = new System.Drawing.Size(163, 24);
             this.comboBox3.TabIndex = 10;
             // 
-            // comboBox2
+            // dgvTasks
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.dgvTasks.FormattingEnabled = true;
+            this.dgvTasks.Items.AddRange(new object[] {
             "Pending",
             " InProgress",
             "Done"});
-            this.comboBox2.Location = new System.Drawing.Point(18, 340);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(88, 24);
-            this.comboBox2.TabIndex = 7;
+            this.dgvTasks.Location = new System.Drawing.Point(207, 201);
+            this.dgvTasks.Name = "dgvTasks";
+            this.dgvTasks.Size = new System.Drawing.Size(105, 24);
+            this.dgvTasks.TabIndex = 7;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(12, 160);
+            this.dateTimePicker2.Location = new System.Drawing.Point(12, 153);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(243, 22);
             this.dateTimePicker2.TabIndex = 14;
@@ -508,7 +514,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 87);
+            this.label2.Location = new System.Drawing.Point(9, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 16);
             this.label2.TabIndex = 13;
@@ -523,22 +529,22 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(18, 276);
+            this.textBox3.Location = new System.Drawing.Point(12, 255);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(237, 22);
+            this.textBox3.Size = new System.Drawing.Size(198, 22);
             this.textBox3.TabIndex = 5;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(9, 106);
+            this.dateTimePicker1.Location = new System.Drawing.Point(9, 99);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(246, 22);
             this.dateTimePicker1.TabIndex = 10;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(18, 224);
+            this.textBox2.Location = new System.Drawing.Point(12, 203);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(121, 22);
             this.textBox2.TabIndex = 3;
@@ -546,7 +552,7 @@
             // button3
             // 
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(229, 379);
+            this.button3.Location = new System.Drawing.Point(216, 255);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 41);
             this.button3.TabIndex = 9;
@@ -568,7 +574,7 @@
             // 
             this.labelTaskDis.AutoSize = true;
             this.labelTaskDis.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelTaskDis.Location = new System.Drawing.Point(15, 261);
+            this.labelTaskDis.Location = new System.Drawing.Point(9, 240);
             this.labelTaskDis.Name = "labelTaskDis";
             this.labelTaskDis.Size = new System.Drawing.Size(109, 16);
             this.labelTaskDis.TabIndex = 4;
@@ -584,32 +590,33 @@
             this.labelAssignee.TabIndex = 9;
             this.labelAssignee.Text = "Assignee";
             // 
-            // button5
+            // btnBackTask
             // 
-            this.button5.Location = new System.Drawing.Point(877, 385);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(119, 50);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "Back";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnBackTask.Location = new System.Drawing.Point(759, 384);
+            this.btnBackTask.Name = "btnBackTask";
+            this.btnBackTask.Size = new System.Drawing.Size(119, 50);
+            this.btnBackTask.TabIndex = 15;
+            this.btnBackTask.Text = "Back";
+            this.btnBackTask.UseVisualStyleBackColor = true;
+            this.btnBackTask.Click += new System.EventHandler(this.btnBackTask_Click);
             // 
-            // button4
+            // btnShowTasks
             // 
-            this.button4.Location = new System.Drawing.Point(755, 43);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Show";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnShowTasks.Location = new System.Drawing.Point(703, 344);
+            this.btnShowTasks.Name = "btnShowTasks";
+            this.btnShowTasks.Size = new System.Drawing.Size(75, 23);
+            this.btnShowTasks.TabIndex = 14;
+            this.btnShowTasks.Text = "Show";
+            this.btnShowTasks.UseVisualStyleBackColor = true;
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(363, 72);
+            this.dataGridView2.Location = new System.Drawing.Point(6, 6);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(630, 307);
+            this.dataGridView2.Size = new System.Drawing.Size(645, 426);
             this.dataGridView2.TabIndex = 13;
             // 
             // labelLevelShow
@@ -617,19 +624,19 @@
             this.labelLevelShow.AutoSize = true;
             this.labelLevelShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLevelShow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelLevelShow.Location = new System.Drawing.Point(363, 23);
+            this.labelLevelShow.Location = new System.Drawing.Point(657, 328);
             this.labelLevelShow.Name = "labelLevelShow";
             this.labelLevelShow.Size = new System.Drawing.Size(40, 16);
             this.labelLevelShow.TabIndex = 11;
             this.labelLevelShow.Text = "Level";
             // 
-            // comboBox4
+            // cmbFilterLevel
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(366, 42);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(383, 24);
-            this.comboBox4.TabIndex = 11;
+            this.cmbFilterLevel.FormattingEnabled = true;
+            this.cmbFilterLevel.Location = new System.Drawing.Point(660, 344);
+            this.cmbFilterLevel.Name = "cmbFilterLevel";
+            this.cmbFilterLevel.Size = new System.Drawing.Size(37, 24);
+            this.cmbFilterLevel.TabIndex = 11;
             // 
             // tabLoad
             // 
@@ -637,7 +644,7 @@
             this.tabLoad.Location = new System.Drawing.Point(4, 25);
             this.tabLoad.Name = "tabLoad";
             this.tabLoad.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLoad.Size = new System.Drawing.Size(1036, 476);
+            this.tabLoad.Size = new System.Drawing.Size(1033, 480);
             this.tabLoad.TabIndex = 1;
             this.tabLoad.Text = "Load";
             // 
@@ -652,6 +659,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormProject";
             this.Text = "FormProject";
+            this.Load += new System.EventHandler(this.FormProject_Load);
             this.tabProject.ResumeLayout(false);
             this.tabNewpro.ResumeLayout(false);
             this.tabNew.ResumeLayout(false);
@@ -659,7 +667,7 @@
             this.tabInfoProject.PerformLayout();
             this.tabTeam.ResumeLayout(false);
             this.tabTeam.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTeam)).EndInit();
             this.gboxMember.ResumeLayout(false);
             this.gboxMember.PerformLayout();
             this.tabTask.ResumeLayout(false);
@@ -678,8 +686,7 @@
         private System.Windows.Forms.TabPage tabNewpro;
         private System.Windows.Forms.TabControl tabNew;
         private System.Windows.Forms.TabPage tabInfoProject;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnNextInfo;
         private System.Windows.Forms.Label labelDead_pro;
         private System.Windows.Forms.Label labelStart_pro;
         private System.Windows.Forms.DateTimePicker dtpDead_line;
@@ -691,9 +698,9 @@
         private System.Windows.Forms.TabPage tabTeam;
         private System.Windows.Forms.TextBox txtName_Team;
         private System.Windows.Forms.Label labelName_team;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnBack_team;
-        private System.Windows.Forms.Button btnNext_team;
+        private System.Windows.Forms.DataGridView dgvTeam;
+        private System.Windows.Forms.Button btnBackTeam;
+        private System.Windows.Forms.Button btnNextTeam;
         private System.Windows.Forms.GroupBox gboxMember;
         private System.Windows.Forms.Button btnDelmember;
         private System.Windows.Forms.Label labelEmail;
@@ -711,7 +718,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelTaskTitle;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox dgvTasks;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
@@ -722,11 +729,12 @@
         private System.Windows.Forms.Label labelLevel;
         private System.Windows.Forms.Label labelTaskDis;
         private System.Windows.Forms.Label labelAssignee;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnBackTask;
+        private System.Windows.Forms.Button btnShowTasks;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label labelLevelShow;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cmbFilterLevel;
         private System.Windows.Forms.TabPage tabLoad;
+        private System.Windows.Forms.Button btnEnd;
     }
 }
