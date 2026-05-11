@@ -25,14 +25,12 @@ namespace UI
             sidepanel.SetupSideMenu(this.panelbtn);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnHome_Click(object sender, EventArgs e)
         {
 
             Classpanelcont.OpenChildForm(panelcont, new FormProject());
-           label1.Text=button1.Text;
+            label1.Text = btnHome.Text;
           
-          
-
         }
 
      
