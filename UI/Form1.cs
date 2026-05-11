@@ -33,60 +33,50 @@ namespace UI
 
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnHome_Click(object sender, EventArgs e)
         {
+            Classpanelcont.OpenChildForm(panelcont, new FormMainpage());
 
-            Classpanelcont.OpenChildForm(panelcont, new FormHome());
-           label1.Text=button1.Text;
-          
-          
 
+
+            label1.Text = btnHome.Text;
         }
 
-     
+        private void btnProject_Click(object sender, EventArgs e)
+        {
+            Classpanelcont.OpenChildForm(panelcont, new FormHome());
+            label1.Text = btnProject.Text;
+        }
 
-        private void button4_Click(object sender, EventArgs e)
+
+
+        private void btnEdit_Click(object sender, EventArgs e)
         {
             Classpanelcont.OpenChildForm(panelcont, new Form4());
 
 
-            label1.Text = button4.Text;
-
-
-
-
+            label1.Text = btnEdit.Text;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnSitting_Click(object sender, EventArgs e)
         {
-
             Classpanelcont.OpenChildForm(panelcont, new Form5());
 
 
-            label1.Text = button5.Text;
-
-
+            label1.Text = btnSitting.Text;
 
         }
 
-        private void buttonproj_Click(object sender, EventArgs e)
-        {
-            Classpanelcont.OpenChildForm(panelcont, new FormProject());
-
-
-
-            label1.Text = buttonproj.Text;
-
-        }
 
         //------------------------زر الاغلاق
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Closebox_Click(object sender, EventArgs e)
         {
             Application.Exit();
-            
         }
+
+
+
         private void Closebox_MouseEnter(object sender, EventArgs e)
         {
             Closebox.BackColor = Color.Red;
@@ -98,7 +88,7 @@ namespace UI
 
 
         //----------------------------زر التصغير
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void minimizedbox_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
@@ -121,6 +111,18 @@ namespace UI
                 SendMessage(this.Handle, 0x112, 0xf012, 0);
             }
         }
+
+       
+
+
+
+
+
+
+
+
+
+
 
 
 

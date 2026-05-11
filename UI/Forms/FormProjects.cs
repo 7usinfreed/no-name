@@ -12,29 +12,30 @@ using LiveCharts;
 using System.Windows.Media;
 
 
+
 namespace UI
 {
-    public partial class FormHome : Form
+    public partial class FormProjects : Form
     {
-        public FormHome()
+        public FormProjects()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void FormProjects_Load(object sender, EventArgs e)
         {
 
-            DataGridView_Design.ApplyDarkTheme(dgvStatus);
+            DataGridView_Design.ApplyDarkTheme(dataGridView1);
 
             //--------------------------------------------------
 
             
-            Database_Selects.DisplayStatusSummary(dgvStatus, 2);
+            Database_Selects.DisplayStatusSummary(dataGridView1, 2);
             // تجعل الأعمدة تتمدد تلقائياً لتناسب حجم أطول جملة في كل عمود
-            dgvStatus.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
             // إذا كنت تريد للعمود الأخير أن يملأ باقي مساحة الجدول تماماً
-            dgvStatus.Columns[dgvStatus.ColumnCount - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridView1.Columns[dataGridView1.ColumnCount - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
             //--------------------------------------------------
 

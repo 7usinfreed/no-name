@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panelbtn = new System.Windows.Forms.Panel();
-            this.buttonproj = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSitting = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnProject = new System.Windows.Forms.Button();
             this.panelhome = new System.Windows.Forms.Panel();
             this.minimizedbox = new System.Windows.Forms.PictureBox();
             this.Closebox = new System.Windows.Forms.PictureBox();
@@ -49,33 +49,33 @@
             // panelbtn
             // 
             this.panelbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
-            this.panelbtn.Controls.Add(this.buttonproj);
+            this.panelbtn.Controls.Add(this.btnHome);
             this.panelbtn.Controls.Add(this.panel2);
-            this.panelbtn.Controls.Add(this.button5);
-            this.panelbtn.Controls.Add(this.button4);
-            this.panelbtn.Controls.Add(this.button1);
+            this.panelbtn.Controls.Add(this.btnSitting);
+            this.panelbtn.Controls.Add(this.btnEdit);
+            this.panelbtn.Controls.Add(this.btnProject);
             this.panelbtn.Location = new System.Drawing.Point(0, 99);
             this.panelbtn.Name = "panelbtn";
             this.panelbtn.Size = new System.Drawing.Size(234, 626);
             this.panelbtn.TabIndex = 0;
             // 
-            // buttonproj
+            // btnHome
             // 
-            this.buttonproj.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
-            this.buttonproj.FlatAppearance.BorderSize = 0;
-            this.buttonproj.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonproj.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
-            this.buttonproj.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.buttonproj.Image = global::UI.Properties.Resources.master_plan;
-            this.buttonproj.Location = new System.Drawing.Point(-7, 0);
-            this.buttonproj.Name = "buttonproj";
-            this.buttonproj.Size = new System.Drawing.Size(244, 68);
-            this.buttonproj.TabIndex = 2;
-            this.buttonproj.Text = "Project";
-            this.buttonproj.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonproj.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonproj.UseVisualStyleBackColor = true;
-            this.buttonproj.Click += new System.EventHandler(this.buttonproj_Click);
+            this.btnHome.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnHome.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
+            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.btnHome.Image = global::UI.Properties.Resources.master_plan;
+            this.btnHome.Location = new System.Drawing.Point(-7, 0);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(244, 68);
+            this.btnHome.TabIndex = 2;
+            this.btnHome.Text = "Project";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panel2
             // 
@@ -84,60 +84,60 @@
             this.panel2.Size = new System.Drawing.Size(1247, 100);
             this.panel2.TabIndex = 1;
             // 
-            // button5
+            // btnSitting
             // 
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.button5.Image = global::UI.Properties.Resources.settings_1_;
-            this.button5.Location = new System.Drawing.Point(-7, 181);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(244, 68);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Sittings";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnSitting.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.btnSitting.FlatAppearance.BorderSize = 0;
+            this.btnSitting.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSitting.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSitting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.btnSitting.Image = global::UI.Properties.Resources.settings_1_;
+            this.btnSitting.Location = new System.Drawing.Point(-7, 181);
+            this.btnSitting.Name = "btnSitting";
+            this.btnSitting.Size = new System.Drawing.Size(244, 68);
+            this.btnSitting.TabIndex = 1;
+            this.btnSitting.Text = "Sittings";
+            this.btnSitting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSitting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSitting.UseVisualStyleBackColor = true;
+            this.btnSitting.Click += new System.EventHandler(this.btnSitting_Click);
             // 
-            // button4
+            // btnEdit
             // 
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.button4.Image = global::UI.Properties.Resources.square_pen;
-            this.button4.Location = new System.Drawing.Point(-7, 120);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(244, 65);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Edit";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEdit.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
+            this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.btnEdit.Image = global::UI.Properties.Resources.square_pen;
+            this.btnEdit.Location = new System.Drawing.Point(-7, 120);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(244, 65);
+            this.btnEdit.TabIndex = 1;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // button1
+            // btnProject
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.button1.Image = global::UI.Properties.Resources.home;
-            this.button1.Location = new System.Drawing.Point(-7, 61);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(244, 67);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Home";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnProject.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProject.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.btnProject.FlatAppearance.BorderSize = 0;
+            this.btnProject.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnProject.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.btnProject.Image = global::UI.Properties.Resources.home;
+            this.btnProject.Location = new System.Drawing.Point(-7, 61);
+            this.btnProject.Name = "btnProject";
+            this.btnProject.Size = new System.Drawing.Size(244, 67);
+            this.btnProject.TabIndex = 1;
+            this.btnProject.Text = "Home";
+            this.btnProject.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProject.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnProject.UseVisualStyleBackColor = true;
+            this.btnProject.Click += new System.EventHandler(this.btnProject_Click);
             // 
             // panelhome
             // 
@@ -159,7 +159,7 @@
             this.minimizedbox.Size = new System.Drawing.Size(67, 63);
             this.minimizedbox.TabIndex = 1;
             this.minimizedbox.TabStop = false;
-            this.minimizedbox.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.minimizedbox.Click += new System.EventHandler(this.minimizedbox_Click);
             this.minimizedbox.MouseEnter += new System.EventHandler(this.minimizedbox_MouseEnter);
             this.minimizedbox.MouseLeave += new System.EventHandler(this.minimizedbox_MouseLeave);
             // 
@@ -172,7 +172,7 @@
             this.Closebox.Size = new System.Drawing.Size(66, 63);
             this.Closebox.TabIndex = 1;
             this.Closebox.TabStop = false;
-            this.Closebox.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.Closebox.Click += new System.EventHandler(this.Closebox_Click);
             this.Closebox.MouseEnter += new System.EventHandler(this.Closebox_MouseEnter);
             this.Closebox.MouseLeave += new System.EventHandler(this.Closebox_MouseLeave);
             // 
@@ -229,14 +229,14 @@
 
         private System.Windows.Forms.Panel panelbtn;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSitting;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnProject;
         private System.Windows.Forms.Panel panelhome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelcont;
-        private System.Windows.Forms.Button buttonproj;
+        private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.PictureBox Closebox;
         private System.Windows.Forms.PictureBox minimizedbox;
     }

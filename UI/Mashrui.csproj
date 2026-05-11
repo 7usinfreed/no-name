@@ -78,11 +78,11 @@
     <Compile Include="Forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormProject.cs">
+    <Compile Include="Forms\FormMainpage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormProject.Designer.cs">
-      <DependentUpon>FormProject.cs</DependentUpon>
+    <Compile Include="Forms\FormMainpage.Designer.cs">
+      <DependentUpon>FormMainpage.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Form4.cs">
       <SubType>Form</SubType>
@@ -126,7 +126,7 @@
       <DependentUpon>Form5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormProject.resx">
-      <DependentUpon>FormProject.cs</DependentUpon>
+      <DependentUpon>FormMainpage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,6 +1,6 @@
 ﻿namespace UI
 {
-    partial class FormProject
+    partial class FormMainpage
     {
         /// <summary>
         /// Required designer variable.
@@ -45,7 +45,7 @@
             this.tabTeam = new System.Windows.Forms.TabPage();
             this.txtName_Team = new System.Windows.Forms.TextBox();
             this.labelName_team = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+           // this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnBack_team = new System.Windows.Forms.Button();
             this.btnNext_team = new System.Windows.Forms.Button();
             this.gboxMember = new System.Windows.Forms.GroupBox();
@@ -67,7 +67,7 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
+           // this.label2 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -87,7 +87,7 @@
             this.tabNew.SuspendLayout();
             this.tabInfoProject.SuspendLayout();
             this.tabTeam.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+          //  ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gboxMember.SuspendLayout();
             this.tabTask.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -249,7 +249,7 @@
             this.tabTeam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
             this.tabTeam.Controls.Add(this.txtName_Team);
             this.tabTeam.Controls.Add(this.labelName_team);
-            this.tabTeam.Controls.Add(this.dataGridView1);
+            //this.tabTeam.Controls.Add(this.dataGridView1);
             this.tabTeam.Controls.Add(this.btnBack_team);
             this.tabTeam.Controls.Add(this.btnNext_team);
             this.tabTeam.Controls.Add(this.gboxMember);
@@ -281,14 +281,14 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(7, 7);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(700, 508);
-            this.dataGridView1.TabIndex = 22;
+            //this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            //this.dataGridView1.Location = new System.Drawing.Point(7, 7);
+            //this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            //this.dataGridView1.Name = "dataGridView1";
+            //this.dataGridView1.RowHeadersWidth = 51;
+            //this.dataGridView1.RowTemplate.Height = 24;
+            //this.dataGridView1.Size = new System.Drawing.Size(700, 508);
+            //this.dataGridView1.TabIndex = 22;
             // 
             // btnBack_team
             // 
@@ -460,7 +460,7 @@
             this.groupBox1.Controls.Add(this.comboBox3);
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.label2);
+//            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
@@ -539,12 +539,12 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 97);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 25);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "start";
+            //this.label2.AutoSize = true;
+            //this.label2.Location = new System.Drawing.Point(8, 97);
+            //this.label2.Name = "label2";
+            //this.label2.Size = new System.Drawing.Size(51, 25);
+            //this.label2.TabIndex = 13;
+            //this.label2.Text = "start";
             // 
             // numericUpDown1
             // 
@@ -702,7 +702,7 @@
             this.tabInfoProject.PerformLayout();
             this.tabTeam.ResumeLayout(false);
             this.tabTeam.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+//            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gboxMember.ResumeLayout(false);
             this.gboxMember.PerformLayout();
             this.tabTask.ResumeLayout(false);
@@ -734,7 +734,7 @@
         private System.Windows.Forms.TabPage tabTeam;
         private System.Windows.Forms.TextBox txtName_Team;
         private System.Windows.Forms.Label labelName_team;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvStatus;
         private System.Windows.Forms.Button btnBack_team;
         private System.Windows.Forms.Button btnNext_team;
         private System.Windows.Forms.GroupBox gboxMember;

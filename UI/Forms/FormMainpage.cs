@@ -10,21 +10,13 @@ using System.Windows.Forms;
 
 namespace UI
 {
-    public partial class FormProject : Form
+    public partial class FormMainpage : Form
     {
-        public FormProject()
+        public FormMainpage()
         {
             InitializeComponent();
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
