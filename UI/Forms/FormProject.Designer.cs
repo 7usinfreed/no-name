@@ -58,24 +58,23 @@
             this.labelRole = new System.Windows.Forms.Label();
             this.txtMember = new System.Windows.Forms.TextBox();
             this.tabTask = new System.Windows.Forms.TabPage();
+            this.dgvTasks = new System.Windows.Forms.DataGridView();
             this.btnTaskEnd = new System.Windows.Forms.Button();
+            this.gboxShowTask = new System.Windows.Forms.GroupBox();
+            this.btnDeleteTask = new System.Windows.Forms.Button();
+            this.labelEndTask = new System.Windows.Forms.Label();
+            this.cmbAssignee = new System.Windows.Forms.ComboBox();
+            this.dtpTaskEnd = new System.Windows.Forms.DateTimePicker();
+            this.labelStartTask = new System.Windows.Forms.Label();
+            this.dtpTaskStart = new System.Windows.Forms.DateTimePicker();
+            this.button3 = new System.Windows.Forms.Button();
+            this.labelTaskTitle = new System.Windows.Forms.Label();
+            this.labelAssignee = new System.Windows.Forms.Label();
+            this.txtTaskDesc = new System.Windows.Forms.TextBox();
+            this.txtTaskTitle = new System.Windows.Forms.TextBox();
+            this.labelTaskDesc = new System.Windows.Forms.Label();
             this.btnBackTask = new System.Windows.Forms.Button();
             this.tabLoad = new System.Windows.Forms.TabPage();
-            this.tabHome = new System.Windows.Forms.TabPage();
-            this.gboxShowTask = new System.Windows.Forms.GroupBox();
-            this.dtpTaskStart = new System.Windows.Forms.DateTimePicker();
-            this.labelStartTask = new System.Windows.Forms.Label();
-            this.dtpTaskEnd = new System.Windows.Forms.DateTimePicker();
-            this.cmbAssignee = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.labelAssignee = new System.Windows.Forms.Label();
-            this.labelEndTask = new System.Windows.Forms.Label();
-            this.txtTaskDesc = new System.Windows.Forms.TextBox();
-            this.labelTaskDesc = new System.Windows.Forms.Label();
-            this.txtTaskTitle = new System.Windows.Forms.TextBox();
-            this.labelTaskTitle = new System.Windows.Forms.Label();
-            this.dgvTasks = new System.Windows.Forms.DataGridView();
-            this.btnDeleteTask = new System.Windows.Forms.Button();
             this.tabProject.SuspendLayout();
             this.tabNewpro.SuspendLayout();
             this.tabNew.SuspendLayout();
@@ -84,13 +83,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeam)).BeginInit();
             this.gboxMember.SuspendLayout();
             this.tabTask.SuspendLayout();
-            this.gboxShowTask.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTasks)).BeginInit();
+            this.gboxShowTask.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabProject
             // 
-            this.tabProject.Controls.Add(this.tabHome);
             this.tabProject.Controls.Add(this.tabNewpro);
             this.tabProject.Controls.Add(this.tabLoad);
             this.tabProject.Location = new System.Drawing.Point(3, 9);
@@ -408,6 +406,16 @@
             this.tabTask.Text = "Task";
             this.tabTask.Click += new System.EventHandler(this.tabTask_Click);
             // 
+            // dgvTasks
+            // 
+            this.dgvTasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTasks.Location = new System.Drawing.Point(6, 3);
+            this.dgvTasks.Name = "dgvTasks";
+            this.dgvTasks.RowHeadersWidth = 51;
+            this.dgvTasks.RowTemplate.Height = 24;
+            this.dgvTasks.Size = new System.Drawing.Size(707, 429);
+            this.dgvTasks.TabIndex = 16;
+            // 
             // btnTaskEnd
             // 
             this.btnTaskEnd.Location = new System.Drawing.Point(884, 384);
@@ -417,36 +425,6 @@
             this.btnTaskEnd.Text = "End";
             this.btnTaskEnd.UseVisualStyleBackColor = true;
             this.btnTaskEnd.Click += new System.EventHandler(this.btnTaskEnd_Click);
-            // 
-            // btnBackTask
-            // 
-            this.btnBackTask.Location = new System.Drawing.Point(759, 384);
-            this.btnBackTask.Name = "btnBackTask";
-            this.btnBackTask.Size = new System.Drawing.Size(119, 50);
-            this.btnBackTask.TabIndex = 15;
-            this.btnBackTask.Text = "Back";
-            this.btnBackTask.UseVisualStyleBackColor = true;
-            this.btnBackTask.Click += new System.EventHandler(this.btnBackTask_Click);
-            // 
-            // tabLoad
-            // 
-            this.tabLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.tabLoad.Location = new System.Drawing.Point(4, 25);
-            this.tabLoad.Name = "tabLoad";
-            this.tabLoad.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLoad.Size = new System.Drawing.Size(1033, 480);
-            this.tabLoad.TabIndex = 1;
-            this.tabLoad.Text = "Load";
-            // 
-            // tabHome
-            // 
-            this.tabHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            this.tabHome.Location = new System.Drawing.Point(4, 25);
-            this.tabHome.Name = "tabHome";
-            this.tabHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHome.Size = new System.Drawing.Size(1033, 480);
-            this.tabHome.TabIndex = 2;
-            this.tabHome.Text = "Home";
             // 
             // gboxShowTask
             // 
@@ -470,12 +448,41 @@
             this.gboxShowTask.TabStop = false;
             this.gboxShowTask.Text = "Task";
             // 
-            // dtpTaskStart
+            // btnDeleteTask
             // 
-            this.dtpTaskStart.Location = new System.Drawing.Point(16, 141);
-            this.dtpTaskStart.Name = "dtpTaskStart";
-            this.dtpTaskStart.Size = new System.Drawing.Size(236, 22);
-            this.dtpTaskStart.TabIndex = 10;
+            this.btnDeleteTask.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnDeleteTask.Location = new System.Drawing.Point(52, 337);
+            this.btnDeleteTask.Name = "btnDeleteTask";
+            this.btnDeleteTask.Size = new System.Drawing.Size(110, 26);
+            this.btnDeleteTask.TabIndex = 16;
+            this.btnDeleteTask.Text = "Delete";
+            this.btnDeleteTask.UseVisualStyleBackColor = true;
+            this.btnDeleteTask.Click += new System.EventHandler(this.btnDeleteTask_Click);
+            // 
+            // labelEndTask
+            // 
+            this.labelEndTask.AutoSize = true;
+            this.labelEndTask.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelEndTask.Location = new System.Drawing.Point(14, 176);
+            this.labelEndTask.Name = "labelEndTask";
+            this.labelEndTask.Size = new System.Drawing.Size(31, 16);
+            this.labelEndTask.TabIndex = 15;
+            this.labelEndTask.Text = "End";
+            // 
+            // cmbAssignee
+            // 
+            this.cmbAssignee.FormattingEnabled = true;
+            this.cmbAssignee.Location = new System.Drawing.Point(17, 255);
+            this.cmbAssignee.Name = "cmbAssignee";
+            this.cmbAssignee.Size = new System.Drawing.Size(122, 24);
+            this.cmbAssignee.TabIndex = 10;
+            // 
+            // dtpTaskEnd
+            // 
+            this.dtpTaskEnd.Location = new System.Drawing.Point(16, 195);
+            this.dtpTaskEnd.Name = "dtpTaskEnd";
+            this.dtpTaskEnd.Size = new System.Drawing.Size(233, 22);
+            this.dtpTaskEnd.TabIndex = 14;
             // 
             // labelStartTask
             // 
@@ -487,20 +494,12 @@
             this.labelStartTask.TabIndex = 13;
             this.labelStartTask.Text = "Start";
             // 
-            // dtpTaskEnd
+            // dtpTaskStart
             // 
-            this.dtpTaskEnd.Location = new System.Drawing.Point(16, 195);
-            this.dtpTaskEnd.Name = "dtpTaskEnd";
-            this.dtpTaskEnd.Size = new System.Drawing.Size(233, 22);
-            this.dtpTaskEnd.TabIndex = 14;
-            // 
-            // cmbAssignee
-            // 
-            this.cmbAssignee.FormattingEnabled = true;
-            this.cmbAssignee.Location = new System.Drawing.Point(17, 255);
-            this.cmbAssignee.Name = "cmbAssignee";
-            this.cmbAssignee.Size = new System.Drawing.Size(122, 24);
-            this.cmbAssignee.TabIndex = 10;
+            this.dtpTaskStart.Location = new System.Drawing.Point(16, 141);
+            this.dtpTaskStart.Name = "dtpTaskStart";
+            this.dtpTaskStart.Size = new System.Drawing.Size(236, 22);
+            this.dtpTaskStart.TabIndex = 10;
             // 
             // button3
             // 
@@ -513,6 +512,16 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.btnSaveTask_Click);
             // 
+            // labelTaskTitle
+            // 
+            this.labelTaskTitle.AutoSize = true;
+            this.labelTaskTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelTaskTitle.Location = new System.Drawing.Point(13, 23);
+            this.labelTaskTitle.Name = "labelTaskTitle";
+            this.labelTaskTitle.Size = new System.Drawing.Size(64, 16);
+            this.labelTaskTitle.TabIndex = 2;
+            this.labelTaskTitle.Text = "TaskTitel";
+            // 
             // labelAssignee
             // 
             this.labelAssignee.AutoSize = true;
@@ -523,16 +532,6 @@
             this.labelAssignee.TabIndex = 9;
             this.labelAssignee.Text = "Assignee";
             // 
-            // labelEndTask
-            // 
-            this.labelEndTask.AutoSize = true;
-            this.labelEndTask.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelEndTask.Location = new System.Drawing.Point(14, 176);
-            this.labelEndTask.Name = "labelEndTask";
-            this.labelEndTask.Size = new System.Drawing.Size(31, 16);
-            this.labelEndTask.TabIndex = 15;
-            this.labelEndTask.Text = "End";
-            // 
             // txtTaskDesc
             // 
             this.txtTaskDesc.Location = new System.Drawing.Point(16, 94);
@@ -540,6 +539,13 @@
             this.txtTaskDesc.Name = "txtTaskDesc";
             this.txtTaskDesc.Size = new System.Drawing.Size(239, 22);
             this.txtTaskDesc.TabIndex = 5;
+            // 
+            // txtTaskTitle
+            // 
+            this.txtTaskTitle.Location = new System.Drawing.Point(16, 42);
+            this.txtTaskTitle.Name = "txtTaskTitle";
+            this.txtTaskTitle.Size = new System.Drawing.Size(239, 22);
+            this.txtTaskTitle.TabIndex = 3;
             // 
             // labelTaskDesc
             // 
@@ -551,43 +557,25 @@
             this.labelTaskDesc.TabIndex = 4;
             this.labelTaskDesc.Text = "Task Description";
             // 
-            // txtTaskTitle
+            // btnBackTask
             // 
-            this.txtTaskTitle.Location = new System.Drawing.Point(16, 42);
-            this.txtTaskTitle.Name = "txtTaskTitle";
-            this.txtTaskTitle.Size = new System.Drawing.Size(239, 22);
-            this.txtTaskTitle.TabIndex = 3;
+            this.btnBackTask.Location = new System.Drawing.Point(759, 384);
+            this.btnBackTask.Name = "btnBackTask";
+            this.btnBackTask.Size = new System.Drawing.Size(119, 50);
+            this.btnBackTask.TabIndex = 15;
+            this.btnBackTask.Text = "Back";
+            this.btnBackTask.UseVisualStyleBackColor = true;
+            this.btnBackTask.Click += new System.EventHandler(this.btnBackTask_Click);
             // 
-            // labelTaskTitle
+            // tabLoad
             // 
-            this.labelTaskTitle.AutoSize = true;
-            this.labelTaskTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelTaskTitle.Location = new System.Drawing.Point(13, 23);
-            this.labelTaskTitle.Name = "labelTaskTitle";
-            this.labelTaskTitle.Size = new System.Drawing.Size(64, 16);
-            this.labelTaskTitle.TabIndex = 2;
-            this.labelTaskTitle.Text = "TaskTitel";
-            // 
-            // dgvTasks
-            // 
-            this.dgvTasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTasks.Location = new System.Drawing.Point(6, 3);
-            this.dgvTasks.Name = "dgvTasks";
-            this.dgvTasks.RowHeadersWidth = 51;
-            this.dgvTasks.RowTemplate.Height = 24;
-            this.dgvTasks.Size = new System.Drawing.Size(707, 429);
-            this.dgvTasks.TabIndex = 16;
-            // 
-            // btnDeleteTask
-            // 
-            this.btnDeleteTask.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDeleteTask.Location = new System.Drawing.Point(52, 337);
-            this.btnDeleteTask.Name = "btnDeleteTask";
-            this.btnDeleteTask.Size = new System.Drawing.Size(110, 26);
-            this.btnDeleteTask.TabIndex = 16;
-            this.btnDeleteTask.Text = "Delete";
-            this.btnDeleteTask.UseVisualStyleBackColor = true;
-            this.btnDeleteTask.Click += new System.EventHandler(this.btnDeleteTask_Click);
+            this.tabLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            this.tabLoad.Location = new System.Drawing.Point(4, 25);
+            this.tabLoad.Name = "tabLoad";
+            this.tabLoad.Padding = new System.Windows.Forms.Padding(3);
+            this.tabLoad.Size = new System.Drawing.Size(1033, 480);
+            this.tabLoad.TabIndex = 1;
+            this.tabLoad.Text = "Load";
             // 
             // FormProject
             // 
@@ -612,9 +600,9 @@
             this.gboxMember.ResumeLayout(false);
             this.gboxMember.PerformLayout();
             this.tabTask.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTasks)).EndInit();
             this.gboxShowTask.ResumeLayout(false);
             this.gboxShowTask.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTasks)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -654,7 +642,6 @@
         private System.Windows.Forms.Button btnBackTask;
         private System.Windows.Forms.TabPage tabLoad;
         private System.Windows.Forms.Button btnTaskEnd;
-        private System.Windows.Forms.TabPage tabHome;
         private System.Windows.Forms.GroupBox gboxShowTask;
         private System.Windows.Forms.DataGridView dgvTasks;
         private System.Windows.Forms.Label labelEndTask;

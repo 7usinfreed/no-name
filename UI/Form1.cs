@@ -69,18 +69,54 @@ namespace UI
 
         }
 
+        private void btnWelcomeNew_Click(object sender, EventArgs e)
+        {
+            panelbtn.Visible = true;
+            panel3.Visible = false;
+            panel3.Enabled = false;
 
-       //-----------------------------------------------------------
+            btnHome_Click(sender, e);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panelbtn.Visible = true;
+
+            btnHome_Click(sender, e);
+        }
+
+        private void panelcont_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        //-----------------------------------------------------------
 
 
 
 
-        
 
 
 
-        
 
-        
+
+
+
     }
 }
