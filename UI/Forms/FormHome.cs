@@ -24,17 +24,17 @@ namespace UI
         private void Form2_Load(object sender, EventArgs e)
         {
 
-            DataGridView_Design.ApplyDarkTheme(dataGridView1);
+            DataGridView_Design.ApplyDarkTheme(dgvstatus);
 
             //--------------------------------------------------
 
             
-            Database_Selects.DisplayStatusSummary(dataGridView1, 2);
+            Database_Selects.DisplayStatusSummary(dgvstatus, 2);
             // تجعل الأعمدة تتمدد تلقائياً لتناسب حجم أطول جملة في كل عمود
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvstatus.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
             // إذا كنت تريد للعمود الأخير أن يملأ باقي مساحة الجدول تماماً
-            dataGridView1.Columns[dataGridView1.ColumnCount - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgvstatus.Columns[dgvstatus.ColumnCount - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
             //--------------------------------------------------
 
@@ -58,9 +58,12 @@ namespace UI
 
             //------------------------------------
 
-
-
-
+            Database_Selects.DisplayMembers(dgvMembers, 1);
+            DataGridView_Design.ApplyDarkTheme(dgvMembers);
+            // تجعل الأعمدة تتمدد تلقائياً لتناسب حجم أطول جملة في كل عمود
+            dgvMembers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            // إذا كنت تريد للعمود الأخير أن يملأ باقي مساحة الجدول تماماً
+            dgvMembers.Columns[dgvstatus.ColumnCount - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
 
 
@@ -68,6 +71,6 @@ namespace UI
 
         }
 
-       
+        
     }
 }

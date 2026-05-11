@@ -192,9 +192,53 @@ public static void RefreshDashboardStats(int projectId, Label lblTotalTasks, Lab
                 MessageBox.Show("خطأ في تحديث البطاقات: " + ex.Message);
             }
         }
-    }
 
-}
+    }
+        public static void DisplayMembers(DataGridView dgv, int projectId)
+        {
+            // الاستعلام الذي طلبته مع تسمية الأعمدة بشكل احترافي للعرض
+            string query = @"
+               SELECT 
+    m.m_name AS [اسم العضو],
+    t.tk_name AS [اسم المهمة],
+    t.status AS [حالة المهمة],
+    CASE 
+        WHEN t.status = 'Completed' THEN 'مكتملة'
+        ELSE 'غير مكتملة'
+    END AS [الوضعية]
+FROM members m
+JOIN tasks t ON m.m_id = t.assigned_to
+JOIN projects p ON t.project_id = p.project_id
+WHERE p.project_id = 1  -- استبدل هذا باسم المشروع المطلوب
+ORDER BY m.m_name;";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                    adapter.SelectCommand.Parameters.AddWithValue("@projectId", projectId);
+
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+
+                    // 1. ربط البيانات بالجدول
+                    dgv.DataSource = dt;
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("حدث خطأ أثناء جلب البيانات: " + ex.Message);
+                }
+
+
+            }
+
+
+        }
+
+    }
 
 
 
