@@ -230,6 +230,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="database\Schema.sql" />
+    <None Include="Resources\minimize.png" />
+    <None Include="Resources\rectangle-xmark%281%29.png" />
     <None Include="Resources\default1.png" />
     <None Include="Resources\cover1.png" />
   </ItemGroup>

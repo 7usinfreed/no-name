@@ -35,6 +35,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panelhome = new System.Windows.Forms.Panel();
+            this.pboxMinimized = new System.Windows.Forms.PictureBox();
+            this.pboxClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pboxLogo = new System.Windows.Forms.PictureBox();
@@ -47,6 +49,8 @@
             this.lblWhatToday = new System.Windows.Forms.Label();
             this.panelbtn.SuspendLayout();
             this.panelhome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxMinimized)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxClose)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxLogo)).BeginInit();
             this.panelcont.SuspendLayout();
@@ -158,12 +162,41 @@
             // panelhome
             // 
             this.panelhome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
+            this.panelhome.Controls.Add(this.pboxMinimized);
+            this.panelhome.Controls.Add(this.pboxClose);
             this.panelhome.Controls.Add(this.label1);
             this.panelhome.Location = new System.Drawing.Point(238, 0);
             this.panelhome.Margin = new System.Windows.Forms.Padding(2);
             this.panelhome.Name = "panelhome";
             this.panelhome.Size = new System.Drawing.Size(1253, 100);
             this.panelhome.TabIndex = 1;
+            this.panelhome.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelhome_MouseDown);
+            this.panelhome.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelhome_MouseMove);
+            this.panelhome.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelhome_MouseUp);
+            // 
+            // pboxMinimized
+            // 
+            this.pboxMinimized.Image = global::UI.Properties.Resources.minimize;
+            this.pboxMinimized.Location = new System.Drawing.Point(1082, 3);
+            this.pboxMinimized.Name = "pboxMinimized";
+            this.pboxMinimized.Size = new System.Drawing.Size(67, 63);
+            this.pboxMinimized.TabIndex = 1;
+            this.pboxMinimized.TabStop = false;
+            this.pboxMinimized.Click += new System.EventHandler(this.pboxMinimized_Click);
+            this.pboxMinimized.MouseEnter += new System.EventHandler(this.pboxMinimized_MouseEnter);
+            this.pboxMinimized.MouseLeave += new System.EventHandler(this.pboxMinimized_MouseLeave);
+            // 
+            // pboxClose
+            // 
+            this.pboxClose.Image = global::UI.Properties.Resources.rectangle_xmark_1_;
+            this.pboxClose.Location = new System.Drawing.Point(1186, 0);
+            this.pboxClose.Name = "pboxClose";
+            this.pboxClose.Size = new System.Drawing.Size(64, 63);
+            this.pboxClose.TabIndex = 1;
+            this.pboxClose.TabStop = false;
+            this.pboxClose.Click += new System.EventHandler(this.pboxClose_Click);
+            this.pboxClose.MouseEnter += new System.EventHandler(this.pboxClose_MouseEnter);
+            this.pboxClose.MouseLeave += new System.EventHandler(this.pboxClose_MouseLeave);
             // 
             // label1
             // 
@@ -191,7 +224,7 @@
             this.pboxLogo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pboxLogo.Image = global::UI.Properties.Resources.cover;
             this.pboxLogo.Location = new System.Drawing.Point(0, 0);
-            this.pboxLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pboxLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pboxLogo.Name = "pboxLogo";
             this.pboxLogo.Size = new System.Drawing.Size(238, 100);
             this.pboxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -216,7 +249,7 @@
             this.panelWelcome.Controls.Add(this.btnWelcomeNew);
             this.panelWelcome.Controls.Add(this.lblWhatToday);
             this.panelWelcome.Location = new System.Drawing.Point(-234, 7);
-            this.panelWelcome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelWelcome.Margin = new System.Windows.Forms.Padding(4);
             this.panelWelcome.Name = "panelWelcome";
             this.panelWelcome.Size = new System.Drawing.Size(1470, 605);
             this.panelWelcome.TabIndex = 5;
@@ -225,7 +258,7 @@
             // 
             this.pboxDefault.Image = global::UI.Properties.Resources._default;
             this.pboxDefault.Location = new System.Drawing.Point(254, 74);
-            this.pboxDefault.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pboxDefault.Margin = new System.Windows.Forms.Padding(4);
             this.pboxDefault.Name = "pboxDefault";
             this.pboxDefault.Size = new System.Drawing.Size(966, 131);
             this.pboxDefault.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -236,7 +269,7 @@
             // 
             this.btnLoad.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoad.Location = new System.Drawing.Point(371, 385);
-            this.btnLoad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLoad.Margin = new System.Windows.Forms.Padding(4);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(252, 119);
             this.btnLoad.TabIndex = 4;
@@ -260,7 +293,7 @@
             // 
             this.btnWelcomeNew.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWelcomeNew.Location = new System.Drawing.Point(863, 385);
-            this.btnWelcomeNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWelcomeNew.Margin = new System.Windows.Forms.Padding(4);
             this.btnWelcomeNew.Name = "btnWelcomeNew";
             this.btnWelcomeNew.Size = new System.Drawing.Size(252, 119);
             this.btnWelcomeNew.TabIndex = 3;
@@ -299,6 +332,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelbtn.ResumeLayout(false);
             this.panelhome.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pboxMinimized)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxClose)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pboxLogo)).EndInit();
             this.panelcont.ResumeLayout(false);
@@ -328,6 +363,8 @@
         private System.Windows.Forms.Label lblWhatToday;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Panel panelWelcome;
+        private System.Windows.Forms.PictureBox pboxMinimized;
+        private System.Windows.Forms.PictureBox pboxClose;
     }
 }
 
