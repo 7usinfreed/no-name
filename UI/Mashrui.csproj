@@ -66,6 +66,7 @@
     <Compile Include="Classes\Classpanelcont.cs" />
     <Compile Include="Classes\DataGridView_Design.cs" />
     <Compile Include="Classes\Database_Selects.cs" />
+    <Compile Include="Classes\DatabaseHelper.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +227,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\time-fast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="database\Schema.sql" />
+    <None Include="Resources\default1.png" />
+    <None Include="Resources\cover1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
