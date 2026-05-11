@@ -154,26 +154,6 @@
             this.btnNextInfo.UseVisualStyleBackColor = true;
             this.btnNextInfo.Click += new System.EventHandler(this.btnNextInfo_Click);
             // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(854, 456);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(134, 59);
-            this.button7.TabIndex = 28;
-            this.button7.Text = "Save";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(994, 456);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 59);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // labelDead_pro
             // 
             this.labelDead_pro.AutoSize = true;
@@ -265,9 +245,9 @@
             // 
             // txtName_Team
             // 
-            this.txtName_Team.Location = new System.Drawing.Point(727, 24);
+            this.txtName_Team.Location = new System.Drawing.Point(727, 37);
             this.txtName_Team.Name = "txtName_Team";
-            this.txtName_Team.Size = new System.Drawing.Size(276, 22);
+            this.txtName_Team.Size = new System.Drawing.Size(276, 30);
             this.txtName_Team.TabIndex = 26;
             // 
             // labelName_team
@@ -279,17 +259,6 @@
             this.labelName_team.Size = new System.Drawing.Size(114, 25);
             this.labelName_team.TabIndex = 25;
             this.labelName_team.Text = "Name Team";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(7, 7);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(700, 508);
-            this.dataGridView1.TabIndex = 22;
             // 
             // dgvTeam
             // 
@@ -305,7 +274,7 @@
             // 
             // btnBackTeam
             // 
-            this.btnBackTeam.Location = new System.Drawing.Point(759, 384);
+            this.btnBackTeam.Location = new System.Drawing.Point(759, 415);
             this.btnBackTeam.Name = "btnBackTeam";
             this.btnBackTeam.Size = new System.Drawing.Size(119, 50);
             this.btnBackTeam.TabIndex = 21;
@@ -315,7 +284,7 @@
             // 
             // btnNextTeam
             // 
-            this.btnNextTeam.Location = new System.Drawing.Point(884, 384);
+            this.btnNextTeam.Location = new System.Drawing.Point(884, 415);
             this.btnNextTeam.Name = "btnNextTeam";
             this.btnNextTeam.Size = new System.Drawing.Size(119, 50);
             this.btnNextTeam.TabIndex = 20;
@@ -335,7 +304,7 @@
             this.gboxMember.Controls.Add(this.labelRole);
             this.gboxMember.Controls.Add(this.txtMember);
             this.gboxMember.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.gboxMember.Location = new System.Drawing.Point(724, 52);
+            this.gboxMember.Location = new System.Drawing.Point(724, 82);
             this.gboxMember.Name = "gboxMember";
             this.gboxMember.Size = new System.Drawing.Size(279, 326);
             this.gboxMember.TabIndex = 19;
@@ -345,9 +314,9 @@
             // btnDelmember
             // 
             this.btnDelmember.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDelmember.Location = new System.Drawing.Point(83, 293);
+            this.btnDelmember.Location = new System.Drawing.Point(83, 283);
             this.btnDelmember.Name = "btnDelmember";
-            this.btnDelmember.Size = new System.Drawing.Size(92, 27);
+            this.btnDelmember.Size = new System.Drawing.Size(92, 37);
             this.btnDelmember.TabIndex = 24;
             this.btnDelmember.Text = "Delete Member";
             this.btnDelmember.UseVisualStyleBackColor = true;
@@ -365,35 +334,26 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(23, 109);
+            this.txtEmail.Location = new System.Drawing.Point(26, 135);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(234, 22);
+            this.txtEmail.Size = new System.Drawing.Size(234, 30);
             this.txtEmail.TabIndex = 23;
             // 
             // btnAddmeber
             // 
             this.btnAddmeber.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAddmeber.Location = new System.Drawing.Point(181, 293);
+            this.btnAddmeber.Location = new System.Drawing.Point(181, 283);
             this.btnAddmeber.Name = "btnAddmeber";
-            this.btnAddmeber.Size = new System.Drawing.Size(92, 27);
+            this.btnAddmeber.Size = new System.Drawing.Size(92, 37);
             this.btnAddmeber.TabIndex = 21;
             this.btnAddmeber.Text = "Add";
             this.btnAddmeber.UseVisualStyleBackColor = true;
             this.btnAddmeber.Click += new System.EventHandler(this.btnAddmemer_Click);
             // 
-            // txtAddrole
-            // 
-            this.txtAddrole.Location = new System.Drawing.Point(169, 201);
-            this.txtAddrole.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtAddrole.Name = "txtAddrole";
-            this.txtAddrole.Size = new System.Drawing.Size(112, 30);
-            this.txtAddrole.TabIndex = 20;
-            this.txtAddrole.Visible = false;
-            // 
             // btnAddrole
             // 
             this.btnAddrole.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAddrole.Location = new System.Drawing.Point(169, 198);
+            this.btnAddrole.Location = new System.Drawing.Point(169, 218);
             this.btnAddrole.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddrole.Name = "btnAddrole";
             this.btnAddrole.Size = new System.Drawing.Size(25, 27);
@@ -420,16 +380,16 @@
             "Developer",
             "Tester",
             "Designer"});
-            this.cmbRole.Location = new System.Drawing.Point(23, 167);
+            this.cmbRole.Location = new System.Drawing.Point(26, 212);
             this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(121, 24);
+            this.cmbRole.Size = new System.Drawing.Size(121, 33);
             this.cmbRole.TabIndex = 18;
             // 
             // labelRole
             // 
             this.labelRole.AutoSize = true;
             this.labelRole.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelRole.Location = new System.Drawing.Point(22, 176);
+            this.labelRole.Location = new System.Drawing.Point(23, 184);
             this.labelRole.Name = "labelRole";
             this.labelRole.Size = new System.Drawing.Size(152, 25);
             this.labelRole.TabIndex = 16;
@@ -437,10 +397,10 @@
             // 
             // txtMember
             // 
-            this.txtMember.Location = new System.Drawing.Point(26, 62);
+            this.txtMember.Location = new System.Drawing.Point(26, 68);
             this.txtMember.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMember.Name = "txtMember";
-            this.txtMember.Size = new System.Drawing.Size(234, 22);
+            this.txtMember.Size = new System.Drawing.Size(234, 30);
             this.txtMember.TabIndex = 15;
             // 
             // tabTask
@@ -450,7 +410,7 @@
             this.tabTask.Controls.Add(this.btnTaskEnd);
             this.tabTask.Controls.Add(this.gboxShowTask);
             this.tabTask.Controls.Add(this.btnBackTask);
-            this.tabTask.Location = new System.Drawing.Point(4, 25);
+            this.tabTask.Location = new System.Drawing.Point(4, 34);
             this.tabTask.Name = "tabTask";
             this.tabTask.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabTask.Size = new System.Drawing.Size(1138, 517);
@@ -470,7 +430,7 @@
             // 
             // btnTaskEnd
             // 
-            this.btnTaskEnd.Location = new System.Drawing.Point(884, 384);
+            this.btnTaskEnd.Location = new System.Drawing.Point(884, 431);
             this.btnTaskEnd.Name = "btnTaskEnd";
             this.btnTaskEnd.Size = new System.Drawing.Size(119, 50);
             this.btnTaskEnd.TabIndex = 17;
@@ -493,60 +453,64 @@
             this.gboxShowTask.Controls.Add(this.txtTaskTitle);
             this.gboxShowTask.Controls.Add(this.labelTaskDesc);
             this.gboxShowTask.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gboxShowTask.Location = new System.Drawing.Point(719, 9);
+            this.gboxShowTask.Location = new System.Drawing.Point(719, 31);
             this.gboxShowTask.Name = "gboxShowTask";
-            this.gboxShowTask.Size = new System.Drawing.Size(284, 369);
+            this.gboxShowTask.Size = new System.Drawing.Size(284, 394);
             this.gboxShowTask.TabIndex = 16;
             this.gboxShowTask.TabStop = false;
             this.gboxShowTask.Text = "Task";
             // 
             // btnDeleteTask
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(12, 160);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(243, 22);
-            this.dateTimePicker2.TabIndex = 14;
+            this.btnDeleteTask.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnDeleteTask.Location = new System.Drawing.Point(52, 337);
+            this.btnDeleteTask.Name = "btnDeleteTask";
+            this.btnDeleteTask.Size = new System.Drawing.Size(110, 36);
+            this.btnDeleteTask.TabIndex = 16;
+            this.btnDeleteTask.Text = "Delete";
+            this.btnDeleteTask.UseVisualStyleBackColor = true;
+            this.btnDeleteTask.Click += new System.EventHandler(this.btnDeleteTask_Click);
             // 
             // labelEndTask
             // 
             this.labelEndTask.AutoSize = true;
             this.labelEndTask.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelEndTask.Location = new System.Drawing.Point(14, 176);
+            this.labelEndTask.Location = new System.Drawing.Point(14, 196);
             this.labelEndTask.Name = "labelEndTask";
-            this.labelEndTask.Size = new System.Drawing.Size(31, 16);
+            this.labelEndTask.Size = new System.Drawing.Size(44, 25);
             this.labelEndTask.TabIndex = 15;
             this.labelEndTask.Text = "End";
             // 
             // cmbAssignee
             // 
             this.cmbAssignee.FormattingEnabled = true;
-            this.cmbAssignee.Location = new System.Drawing.Point(17, 255);
+            this.cmbAssignee.Location = new System.Drawing.Point(17, 291);
             this.cmbAssignee.Name = "cmbAssignee";
-            this.cmbAssignee.Size = new System.Drawing.Size(122, 24);
+            this.cmbAssignee.Size = new System.Drawing.Size(122, 33);
             this.cmbAssignee.TabIndex = 10;
             // 
             // dtpTaskEnd
             // 
-            this.dtpTaskEnd.Location = new System.Drawing.Point(16, 195);
+            this.dtpTaskEnd.Location = new System.Drawing.Point(16, 225);
             this.dtpTaskEnd.Name = "dtpTaskEnd";
-            this.dtpTaskEnd.Size = new System.Drawing.Size(233, 22);
+            this.dtpTaskEnd.Size = new System.Drawing.Size(233, 30);
             this.dtpTaskEnd.TabIndex = 14;
             // 
             // labelStartTask
             // 
             this.labelStartTask.AutoSize = true;
             this.labelStartTask.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelStartTask.Location = new System.Drawing.Point(13, 122);
+            this.labelStartTask.Location = new System.Drawing.Point(13, 134);
             this.labelStartTask.Name = "labelStartTask";
-            this.labelStartTask.Size = new System.Drawing.Size(34, 16);
+            this.labelStartTask.Size = new System.Drawing.Size(53, 25);
             this.labelStartTask.TabIndex = 13;
             this.labelStartTask.Text = "Start";
             // 
             // dtpTaskStart
             // 
-            this.dtpTaskStart.Location = new System.Drawing.Point(16, 141);
+            this.dtpTaskStart.Location = new System.Drawing.Point(16, 162);
             this.dtpTaskStart.Name = "dtpTaskStart";
-            this.dtpTaskStart.Size = new System.Drawing.Size(236, 22);
+            this.dtpTaskStart.Size = new System.Drawing.Size(236, 30);
             this.dtpTaskStart.TabIndex = 10;
             // 
             // button3
@@ -554,7 +518,7 @@
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Location = new System.Drawing.Point(168, 337);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 26);
+            this.button3.Size = new System.Drawing.Size(110, 36);
             this.button3.TabIndex = 9;
             this.button3.Text = "Add";
             this.button3.UseVisualStyleBackColor = true;
@@ -566,7 +530,7 @@
             this.labelTaskTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labelTaskTitle.Location = new System.Drawing.Point(13, 23);
             this.labelTaskTitle.Name = "labelTaskTitle";
-            this.labelTaskTitle.Size = new System.Drawing.Size(64, 16);
+            this.labelTaskTitle.Size = new System.Drawing.Size(89, 25);
             this.labelTaskTitle.TabIndex = 2;
             this.labelTaskTitle.Text = "TaskTitel";
             // 
@@ -574,7 +538,7 @@
             // 
             this.labelAssignee.AutoSize = true;
             this.labelAssignee.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelAssignee.Location = new System.Drawing.Point(13, 236);
+            this.labelAssignee.Location = new System.Drawing.Point(13, 262);
             this.labelAssignee.Name = "labelAssignee";
             this.labelAssignee.Size = new System.Drawing.Size(88, 25);
             this.labelAssignee.TabIndex = 9;
@@ -582,7 +546,7 @@
             // 
             // txtTaskDesc
             // 
-            this.txtTaskDesc.Location = new System.Drawing.Point(16, 94);
+            this.txtTaskDesc.Location = new System.Drawing.Point(16, 111);
             this.txtTaskDesc.Multiline = true;
             this.txtTaskDesc.Name = "txtTaskDesc";
             this.txtTaskDesc.Size = new System.Drawing.Size(239, 22);
@@ -590,24 +554,24 @@
             // 
             // txtTaskTitle
             // 
-            this.txtTaskTitle.Location = new System.Drawing.Point(16, 42);
+            this.txtTaskTitle.Location = new System.Drawing.Point(16, 49);
             this.txtTaskTitle.Name = "txtTaskTitle";
-            this.txtTaskTitle.Size = new System.Drawing.Size(239, 22);
+            this.txtTaskTitle.Size = new System.Drawing.Size(239, 30);
             this.txtTaskTitle.TabIndex = 3;
             // 
             // labelTaskDesc
             // 
             this.labelTaskDesc.AutoSize = true;
             this.labelTaskDesc.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelTaskDesc.Location = new System.Drawing.Point(14, 75);
+            this.labelTaskDesc.Location = new System.Drawing.Point(14, 83);
             this.labelTaskDesc.Name = "labelTaskDesc";
-            this.labelTaskDesc.Size = new System.Drawing.Size(109, 16);
+            this.labelTaskDesc.Size = new System.Drawing.Size(153, 25);
             this.labelTaskDesc.TabIndex = 4;
             this.labelTaskDesc.Text = "Task Description";
             // 
             // btnBackTask
             // 
-            this.btnBackTask.Location = new System.Drawing.Point(759, 384);
+            this.btnBackTask.Location = new System.Drawing.Point(759, 431);
             this.btnBackTask.Name = "btnBackTask";
             this.btnBackTask.Size = new System.Drawing.Size(119, 50);
             this.btnBackTask.TabIndex = 15;
@@ -622,7 +586,7 @@
             this.tabLoad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabLoad.Name = "tabLoad";
             this.tabLoad.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLoad.Size = new System.Drawing.Size(1033, 480);
+            this.tabLoad.Size = new System.Drawing.Size(1163, 566);
             this.tabLoad.TabIndex = 1;
             this.tabLoad.Text = "Load";
             // 

@@ -61,7 +61,7 @@ namespace UI
 
         private void buttonproj_Click(object sender, EventArgs e)
         {
-            Classpanelcont.OpenChildForm(panelcont, new Form2());
+            Classpanelcont.OpenChildForm(panelcont, new FormHome());
 
 
 
@@ -72,8 +72,8 @@ namespace UI
         private void btnWelcomeNew_Click(object sender, EventArgs e)
         {
             panelbtn.Visible = true;
-            panel3.Visible = false;
-            panel3.Enabled = false;
+            panelWelcome.Visible = false;
+            panelWelcome.Enabled = false;
 
             btnHome_Click(sender, e);
         }
@@ -85,25 +85,7 @@ namespace UI
             btnHome_Click(sender, e);
         }
 
-        private void panelcont_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
 
         //-----------------------------------------------------------

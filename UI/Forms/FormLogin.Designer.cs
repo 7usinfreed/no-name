@@ -33,7 +33,7 @@
             this.textboxuser = new System.Windows.Forms.TextBox();
             this.textboxpass = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblLogin = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -83,18 +83,18 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // lblLogin
             // 
-            this.label1.Font = new System.Drawing.Font("Ebrima", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Image = global::UI.Properties.Resources.enter_1_;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Location = new System.Drawing.Point(206, 167);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(279, 73);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Log In";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLogin.Font = new System.Drawing.Font("Ebrima", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblLogin.Image = global::UI.Properties.Resources.enter_1_;
+            this.lblLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblLogin.Location = new System.Drawing.Point(206, 106);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(279, 134);
+            this.lblLogin.TabIndex = 0;
+            this.lblLogin.Text = "Log In";
+            this.lblLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormLogin
             // 
@@ -107,7 +107,7 @@
             this.Controls.Add(this.textboxuser);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLogin";
             this.Text = "FormLogin";
@@ -118,7 +118,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textboxuser;
