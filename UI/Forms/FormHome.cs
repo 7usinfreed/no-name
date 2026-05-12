@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using LiveCharts.Wpf;
 using LiveCharts;
 using System.Windows.Media;
+using System.Data.SqlClient;
 
 
 namespace UI
@@ -57,13 +58,26 @@ namespace UI
 
 
             //------------------------------------
+            string connString = @"Data Source=DESKTOP-GHA82A2\HUSINSERVER;Initial Catalog=mang;Integrated Security=True;";
 
-            Database_Selects.DisplayMembers(dgvMembers, 1);
+           
+            
+
+            // 2. إنشاء كائن الاتصال
+            using (SqlConnection connection = new SqlConnection(connString))
+            {
+                // 3. تمرير الاتصال للـ Adapter
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT \r\n    m.m_name ,\r\n    t.tk_name AS [اسم المهمة],\r\n    t.status AS [حالة المهمة],\r\n    CASE \r\n        WHEN t.status = 'Completed' THEN 'مكتملة'\r\n        ELSE 'غير مكتملة'\r\n    END AS [الوضعية]\r\nFROM members m\r\nJOIN tasks t ON m.m_id = t.assigned_to\r\nJOIN projects p ON t.project_id = p.project_id\r\nWHERE p.project_id = 1  -- استبدل هذا باسم المشروع المطلوب\r\nORDER BY m.m_name;", connection);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dgvMembers.DataSource = dt;
+            }
             DataGridView_Design.ApplyDarkTheme(dgvMembers);
             // تجعل الأعمدة تتمدد تلقائياً لتناسب حجم أطول جملة في كل عمود
             dgvMembers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             // إذا كنت تريد للعمود الأخير أن يملأ باقي مساحة الجدول تماماً
-            dgvMembers.Columns[dgvstatus.ColumnCount - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+         
 
 
 
@@ -71,6 +85,22 @@ namespace UI
 
         }
 
-        
+        private void txtSearchMember_TextChanged(object sender, EventArgs e)
+        {
+            
+                // نفترض أن اسم الـ DataGridView هو dataGridView1
+                // واسم العمود في قاعدة البيانات هو "MemberName"
+                try
+                {
+                    string filter = string.Format("m_name LIKE '%{0}%'", txtSearchMember.Text);
+                    (dgvMembers.DataSource as DataTable).DefaultView.RowFilter = filter;
+                }
+                catch (Exception ex)
+                {
+                MessageBox.Show("حدث خطأ: " + ex.Message);
+                // التعامل مع الخطأ في حال عدم وجود بيانات
+            }
+            
+        }
     }
 }

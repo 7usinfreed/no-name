@@ -443,7 +443,7 @@ namespace UI
 
                         int assignId = memberMap.ContainsKey(tAssignee) ? memberMap[tAssignee] : memberMap.Values.First();
 
-                        string qTask = @"INSERT INTO tasks (tk_name, description, status, project_id, assigned_to, task_start, task_end) 
+                        string qTask = @"INSERT INTO tasks (tk_name, description, status, project_id, assigned_to, start_date_task, end_date_task) 
                                  VALUES (@tkName, @tkDesc, @status, @pId, @assignId, @tStart, @tEnd);";
 
                         SqlCommand cmdTask = new SqlCommand(qTask, conn, transaction);

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabstatus = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -54,6 +54,8 @@
             this.pieChart1 = new LiveCharts.WinForms.PieChart();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panelTeamData = new System.Windows.Forms.Panel();
+            this.txtSearchMember = new System.Windows.Forms.TextBox();
+            this.lblTeamMang = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.dgvMembers = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -62,7 +64,6 @@
             this.mangDataSet = new UI.mangDataSet();
             this.membersTableAdapter = new UI.mangDataSetTableAdapters.membersTableAdapter();
             this.mangDataSet1 = new UI.mangDataSet();
-            this.lblTeamMang = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabstatus.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -279,23 +280,23 @@
             this.dgvstatus.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.dgvstatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvstatus.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvstatus.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvstatus.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvstatus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvstatus.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvstatus.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvstatus.EnableHeadersVisualStyles = false;
             this.dgvstatus.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.dgvstatus.Location = new System.Drawing.Point(475, 351);
@@ -335,11 +336,31 @@
             // 
             // panelTeamData
             // 
+            this.panelTeamData.Controls.Add(this.txtSearchMember);
             this.panelTeamData.Controls.Add(this.lblTeamMang);
             this.panelTeamData.Location = new System.Drawing.Point(848, 3);
             this.panelTeamData.Name = "panelTeamData";
             this.panelTeamData.Size = new System.Drawing.Size(394, 582);
             this.panelTeamData.TabIndex = 1;
+            // 
+            // txtSearchMember
+            // 
+            this.txtSearchMember.Location = new System.Drawing.Point(52, 76);
+            this.txtSearchMember.Name = "txtSearchMember";
+            this.txtSearchMember.Size = new System.Drawing.Size(295, 30);
+            this.txtSearchMember.TabIndex = 3;
+            this.txtSearchMember.TextChanged += new System.EventHandler(this.txtSearchMember_TextChanged);
+            // 
+            // lblTeamMang
+            // 
+            this.lblTeamMang.Font = new System.Drawing.Font("Ebrima", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeamMang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
+            this.lblTeamMang.Location = new System.Drawing.Point(45, 6);
+            this.lblTeamMang.Name = "lblTeamMang";
+            this.lblTeamMang.Size = new System.Drawing.Size(319, 54);
+            this.lblTeamMang.TabIndex = 2;
+            this.lblTeamMang.Text = "Search for Member";
+            this.lblTeamMang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel1
             // 
@@ -357,7 +378,7 @@
             this.dgvMembers.Name = "dgvMembers";
             this.dgvMembers.RowHeadersWidth = 62;
             this.dgvMembers.RowTemplate.Height = 29;
-            this.dgvMembers.Size = new System.Drawing.Size(822, 314);
+            this.dgvMembers.Size = new System.Drawing.Size(822, 326);
             this.dgvMembers.TabIndex = 1;
             // 
             // tabPage1
@@ -368,7 +389,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1245, 588);
             this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "Tasks";
+            this.tabPage1.Text = "TasksCheck";
             // 
             // membersBindingSource
             // 
@@ -394,17 +415,6 @@
             this.mangDataSet1.DataSetName = "mangDataSet";
             this.mangDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // lblTeamMang
-            // 
-            this.lblTeamMang.Font = new System.Drawing.Font("Ebrima", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeamMang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
-            this.lblTeamMang.Location = new System.Drawing.Point(45, 6);
-            this.lblTeamMang.Name = "lblTeamMang";
-            this.lblTeamMang.Size = new System.Drawing.Size(319, 54);
-            this.lblTeamMang.TabIndex = 2;
-            this.lblTeamMang.Text = "Members Mangement";
-            this.lblTeamMang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // FormHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -429,6 +439,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvstatus)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panelTeamData.ResumeLayout(false);
+            this.panelTeamData.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.membersBindingSource)).EndInit();
@@ -473,5 +484,6 @@
         private System.Windows.Forms.DataGridView dgvMembers;
         private mangDataSet mangDataSet1;
         private System.Windows.Forms.Label lblTeamMang;
+        private System.Windows.Forms.TextBox txtSearchMember;
     }
 }
